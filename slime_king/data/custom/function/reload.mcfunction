@@ -19,4 +19,4 @@
 tellraw @a [{"text": "The Slime King Datapack has been activated.", "color": "yellow"}]
 
 # Reset the init trigger of the Datapack
-scoreboard players set $init init_boolean 0
+# scoreboard players set $init init_boolean 0
