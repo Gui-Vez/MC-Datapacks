@@ -11,7 +11,6 @@
 # --------------------------------------------------------------- #
 #                                                                 #
 #     Author: HeyaItsSoup                                         #
-#     Website: (none)                                             #
 #                                                                 #
 ###################################################################
 
@@ -23,11 +22,3 @@ scoreboard objectives add init_boolean dummy
 
 # Call the init function only if it hasn't been called before
 execute unless score $init init_boolean matches 1 run function custom:scripts/init
-
-
-#############
-# FUNCTIONS #
-#############
-
-# Uncomment this line to run this function on loop
-# function custom:scripts/code/test

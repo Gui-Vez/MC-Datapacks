@@ -2,6 +2,6 @@
 	"pack":
 	{
 		"pack_format": 48,
-  		"description": "Template for creating Datapacks."
+  		"description": "Template for creating Datapacks. (Do not forget to change the pack format according to MC version)"
 	}
 }

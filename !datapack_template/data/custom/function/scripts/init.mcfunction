@@ -1,12 +1,16 @@
 ### Function that initializes the calling of other functions. ###
-## /function custom:scripts/init
+## /datapack enable "file/custom"
 
 #############
 # FUNCTIONS #
 #############
 
-# Install all required scoreboard objectives
-function custom:scripts/install
+# Clear running functions
+function custom:scripts/_clear
+
+# Install all required components
+schedule function custom:scripts/_scores 1s replace
+schedule function custom:scripts/_functions 1s replace
 
 # Notify the player that the functions have been installed
 tellraw @a [{"text": "The Datapack has been initialized.", "color": "yellow"}]
