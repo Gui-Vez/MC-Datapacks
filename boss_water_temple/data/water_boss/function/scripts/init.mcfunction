@@ -6,14 +6,17 @@
 #############
 
 # Clear running functions
-function water_boss:scripts/_clear
+function water_boss:scripts/_clear_functions
+
+# Clear existing scores
+function water_boss:scripts/_clear_scores
 
 # Install all required components
 schedule function water_boss:scripts/_scores 1s replace
 schedule function water_boss:scripts/_functions 1s replace
 
 # Notify the player that the functions have been installed
-tellraw @a [{"text": "The Datapack has been initialized.", "color": "yellow"}]
+# tellraw @a [{"text": "The Datapack has been initialized.", "color": "yellow"}]
 
 # Put the init boolean variable to "true"
 scoreboard players set $init init_boolean 1
