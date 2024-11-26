@@ -26,6 +26,20 @@ scoreboard objectives add WaterBossMaxZpos dummy "Water Boss Max Z Position"
 scoreboard players set $world waterBossInit 0
 
 # (Positions are set when armor stands are loaded) 
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Column"] run scoreboard players set @s WaterBossXpos -5250
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Depth" ] run scoreboard players set @s WaterBossYpos -0700
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Row"   ] run scoreboard players set @s WaterBossZpos -1150
+# execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Column"] run scoreboard players set @s WaterBossXpos -5250
+# execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Depth" ] run scoreboard players set @s WaterBossYpos -0700
+# execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Row"   ] run scoreboard players set @s WaterBossZpos -1150
+
+## Convert Position -> WaterBossPos score ##
+# X position #
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Column"] store result score @s WaterBossXpos run data get entity @s Pos[0] 100
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Column"] store result score @s WaterBossYpos run data get entity @s Pos[1] 100
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Column"] store result score @s WaterBossZpos run data get entity @s Pos[2] 100
+# Y position #
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Depth" ] store result score @s WaterBossXpos run data get entity @s Pos[0] 100
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Depth" ] store result score @s WaterBossYpos run data get entity @s Pos[1] 100
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Depth" ] store result score @s WaterBossZpos run data get entity @s Pos[2] 100
+# Z position #
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Row"   ] store result score @s WaterBossXpos run data get entity @s Pos[0] 100
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Row"   ] store result score @s WaterBossYpos run data get entity @s Pos[1] 100
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Row"   ] store result score @s WaterBossZpos run data get entity @s Pos[2] 100

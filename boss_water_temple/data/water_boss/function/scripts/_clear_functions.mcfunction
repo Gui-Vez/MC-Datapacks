@@ -6,5 +6,5 @@
 #############
 
 # Clear the functions
+schedule clear water_boss:scripts/code/_get_set_positions
 schedule clear water_boss:scripts/code/test_tick
-schedule clear water_boss:scripts/code/_get_positions
