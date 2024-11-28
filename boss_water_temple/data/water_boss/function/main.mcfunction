@@ -23,4 +23,4 @@
 scoreboard objectives add init_boolean dummy
 
 # Call the init function only if it hasn't been called before
-execute unless score $init init_boolean matches 1 run function water_boss:scripts/init
+execute unless score $init init_boolean matches 1 unless score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] init_boolean matches 1 run function water_boss:scripts/init

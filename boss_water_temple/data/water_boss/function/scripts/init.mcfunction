@@ -5,6 +5,9 @@
 # FUNCTIONS #
 #############
 
+# Remove existing entities
+function water_boss:scripts/code/_unload_entities
+
 # Clear running functions
 function water_boss:scripts/_clear_functions
 
@@ -20,3 +23,4 @@ schedule function water_boss:scripts/_functions 1s replace
 
 # Put the init boolean variable to "true"
 scoreboard players set $init init_boolean 1
+scoreboard players set @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] init_boolean 1
