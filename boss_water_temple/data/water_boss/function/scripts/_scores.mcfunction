@@ -5,7 +5,7 @@
 # SCOREBOARDS #
 ###############
 
-# Objectives #
+## Objectives ##
 scoreboard objectives add waterBossInit dummy "Water Boss Init"
 scoreboard objectives add waterBossPosInit dummy "Water Boss Position Init"
 
@@ -13,37 +13,31 @@ scoreboard objectives add WaterBossXpos dummy "Water Boss X Position"
 scoreboard objectives add WaterBossYpos dummy "Water Boss Y Position"
 scoreboard objectives add WaterBossZpos dummy "Water Boss Z Position"
 
-scoreboard objectives add WaterBossMinXpos dummy "Water Boss Min X Position"
-scoreboard objectives add WaterBossMinYpos dummy "Water Boss Min Y Position"
-scoreboard objectives add WaterBossMinZpos dummy "Water Boss Min Z Position"
+scoreboard objectives add WaterBossInnXrad dummy "Water Boss Inner X Radius"
+scoreboard objectives add WaterBossInnYrad dummy "Water Boss Inner Y Radius"
+scoreboard objectives add WaterBossInnZrad dummy "Water Boss Inner Z Radius"
 
-scoreboard objectives add WaterBossMaxXpos dummy "Water Boss Max X Position"
-scoreboard objectives add WaterBossMaxYpos dummy "Water Boss Max Y Position"
-scoreboard objectives add WaterBossMaxZpos dummy "Water Boss Max Z Position"
+scoreboard objectives add WaterBossOutXrad dummy "Water Boss Outer X Radius"
+scoreboard objectives add WaterBossOutYrad dummy "Water Boss Outer Y Radius"
+scoreboard objectives add WaterBossOutZrad dummy "Water Boss Outer Z Radius"
 
+scoreboard objectives add WaterBossMinXpos dummy "Water Boss Minimum X Position"
+scoreboard objectives add WaterBossMinYpos dummy "Water Boss Minimum Y Position"
+scoreboard objectives add WaterBossMinZpos dummy "Water Boss Minimum Z Position"
 
-# Values #
+scoreboard objectives add WaterBossMaxXpos dummy "Water Boss Maximum X Position"
+scoreboard objectives add WaterBossMaxYpos dummy "Water Boss Maximum Y Position"
+scoreboard objectives add WaterBossMaxZpos dummy "Water Boss Maximum Z Position"
+
+## Values ##
 scoreboard players set $world waterBossInit 0
 
-# (Positions are set when armor stands are loaded) 
-# execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Column"] run scoreboard players set @s WaterBossXpos -5250
-# execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Depth" ] run scoreboard players set @s WaterBossYpos -0700
-# execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Row"   ] run scoreboard players set @s WaterBossZpos -1150
+# Inner radius #
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossInnXrad -0500
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossInnYrad -0800
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossInnZrad -0700
 
-## Convert Position -> WaterBossPos score ##
-# Column #
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Column"   ] store result score @s WaterBossXpos run data get entity @s Pos[0] 100
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Column"   ] store result score @s WaterBossYpos run data get entity @s Pos[1] 100
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Column"   ] store result score @s WaterBossZpos run data get entity @s Pos[2] 100
-# Depth #
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Depth"    ] store result score @s WaterBossXpos run data get entity @s Pos[0] 100
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Depth"    ] store result score @s WaterBossYpos run data get entity @s Pos[1] 100
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Depth"    ] store result score @s WaterBossZpos run data get entity @s Pos[2] 100
-# Row #
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Row"      ] store result score @s WaterBossXpos run data get entity @s Pos[0] 100
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Row"      ] store result score @s WaterBossYpos run data get entity @s Pos[1] 100
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Row"      ] store result score @s WaterBossZpos run data get entity @s Pos[2] 100
-# Row Pivot #
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Row Pivot"] store result score @s WaterBossXpos run data get entity @s Pos[0] 100
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Row Pivot"] store result score @s WaterBossYpos run data get entity @s Pos[1] 100
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Row Pivot"] store result score @s WaterBossZpos run data get entity @s Pos[2] 100
+# Outer radius #
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossOutXrad 0500
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossOutYrad -0300
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossOutZrad 0700
