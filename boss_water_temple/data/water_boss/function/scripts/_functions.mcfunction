@@ -6,11 +6,11 @@
 #############
 
 # Load #
-function water_boss:scripts/code/_unload_entities
 function water_boss:scripts/code/_load_entities
 function water_boss:scripts/_scores
+function water_boss:scripts/code/_set_positions
 # function water_boss:scripts/code/test_load
 
 # Tick #
-function water_boss:scripts/code/_manage_movements
+schedule function water_boss:scripts/code/_detect_player_start 2t
 # function water_boss:scripts/code/test_tick

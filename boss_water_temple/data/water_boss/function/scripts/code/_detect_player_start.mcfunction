@@ -4,5 +4,9 @@
 # FUNCTIONS #
 #############
 
-# Might need to use a scoreboard value to detect if the player entered the fight or not (bool 0 or 1)
-# May need to use a schedule clear instead
+execute as @a[gamemode=!creative, gamemode=!spectator] at @s if entity @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init", distance=..25] if score $world waterBossInit matches 0 run schedule function water_boss:scripts/code/_init_fight 1t
+
+execute if score $world waterBossInit matches 1 run schedule clear water_boss:scripts/code/_detect_player_start
+execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] waterBossInit matches 1 run schedule clear water_boss:scripts/code/_detect_player_start
+
+schedule function water_boss:scripts/code/_detect_player_start 2t replace

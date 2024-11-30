@@ -14,6 +14,9 @@ function water_boss:scripts/_clear_scores
 # Unload entities
 function water_boss:scripts/code/_unload_entities
 
+# Remove the init boolean #
+scoreboard objectives remove init_boolean
+
 # Alert the player that the Datapack is no longer running
 tellraw @a [{"text": "The Datapack has been uninstalled.\nUse /datapack enable \"file/boss_water_temple\" to reinstall.", "color": "yellow"}]
 

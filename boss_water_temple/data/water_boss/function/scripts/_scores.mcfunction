@@ -7,7 +7,6 @@
 
 ## Objectives ##
 scoreboard objectives add waterBossInit dummy "Water Boss Init"
-scoreboard objectives add waterBossPosInit dummy "Water Boss Position Init"
 
 scoreboard objectives add WaterBossXpos dummy "Water Boss X Position"
 scoreboard objectives add WaterBossYpos dummy "Water Boss Y Position"
@@ -31,6 +30,11 @@ scoreboard objectives add WaterBossMaxZpos dummy "Water Boss Maximum Z Position"
 
 ## Values ##
 scoreboard players set $world waterBossInit 0
+
+# Initial positions #
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] run scoreboard players set @s WaterBossXpos -6200
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] run scoreboard players set @s WaterBossYpos 0800
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] run scoreboard players set @s WaterBossZpos -1600
 
 # Inner radius #
 execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossInnXrad -0500

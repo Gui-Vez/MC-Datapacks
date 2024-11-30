@@ -16,9 +16,9 @@ execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Column
 
 ## Depth ##
 # Min #
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Row"] if score @s WaterBossYpos < @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] WaterBossMinYpos run scoreboard players operation @s WaterBossYpos = @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] WaterBossMinYpos
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Depth"] if score @s WaterBossYpos < @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] WaterBossMinYpos run scoreboard players operation @s WaterBossYpos = @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] WaterBossMinYpos
 # Max #
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Row"] if score @s WaterBossYpos > @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] WaterBossMaxYpos run scoreboard players operation @s WaterBossYpos = @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] WaterBossMaxYpos
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Depth"] if score @s WaterBossYpos > @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] WaterBossMaxYpos run scoreboard players operation @s WaterBossYpos = @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] WaterBossMaxYpos
 
 ## Row ##
 # Min #

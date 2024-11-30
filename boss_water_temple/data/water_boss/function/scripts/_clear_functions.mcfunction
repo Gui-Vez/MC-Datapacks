@@ -6,10 +6,18 @@
 #############
 
 # Clear the functions
-schedule clear water_boss:scripts/code/_get_positions
-schedule clear water_boss:scripts/code/_move_by_score
+schedule clear water_boss:scripts/_functions
+schedule clear water_boss:scripts/_scores
 schedule clear water_boss:scripts/code/_clamp_positions
-schedule clear water_boss:scripts/code/_set_positions
-schedule clear water_boss:scripts/code/_move_by_commands
+schedule clear water_boss:scripts/code/_detect_player_start
+schedule clear water_boss:scripts/code/_get_positions
+schedule clear water_boss:scripts/code/_init_fight
+schedule clear water_boss:scripts/code/_load_entities
 schedule clear water_boss:scripts/code/_manage_movements
+schedule clear water_boss:scripts/code/_min_max_borders
+schedule clear water_boss:scripts/code/_move_by_commands
+schedule clear water_boss:scripts/code/_move_by_score
+schedule clear water_boss:scripts/code/_set_positions
+schedule clear water_boss:scripts/code/_teleport_stands
+schedule clear water_boss:scripts/code/_unload_entities
 schedule clear water_boss:scripts/code/test_tick

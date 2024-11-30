@@ -5,13 +5,11 @@
 # FUNCTIONS #
 #############
 
-# Remove existing entities
+# Remove pre-existing entities #
 function water_boss:scripts/code/_unload_entities
 
-# Clear running functions
+# Clear running functions and scores
 function water_boss:scripts/_clear_functions
-
-# Clear existing scores
 function water_boss:scripts/_clear_scores
 
 # Install all required components
