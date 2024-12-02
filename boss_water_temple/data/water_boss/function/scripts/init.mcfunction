@@ -16,9 +16,8 @@ function water_boss:scripts/_clear_scores
 schedule function water_boss:scripts/_scores 1s replace
 schedule function water_boss:scripts/_functions 1s replace
 
-# Notify the player that the functions have been installed
-# tellraw @a [{"text": "The Datapack has been initialized.", "color": "yellow"}]
-
 # Put the init boolean variable to "true"
 scoreboard players set $init init_boolean 1
-scoreboard players set @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] init_boolean 1
+
+# Notify the player that the functions have been installed
+# tellraw @a [{"text": "The Datapack has been initialized.", "color": "yellow"}]

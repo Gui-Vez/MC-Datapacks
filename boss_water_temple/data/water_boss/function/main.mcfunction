@@ -18,7 +18,6 @@
 
 ### This mcfunction will be loaded 20 in-game ticks per second. ###
 
-
 # Create a boolean that determines if the functions have been initialized, using a fake player
 scoreboard objectives add init_boolean dummy
 

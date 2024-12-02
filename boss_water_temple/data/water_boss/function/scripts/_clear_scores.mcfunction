@@ -12,6 +12,10 @@ scoreboard objectives remove WaterBossXpos
 scoreboard objectives remove WaterBossYpos
 scoreboard objectives remove WaterBossZpos
 
+scoreboard objectives remove WaterBossXoffset
+scoreboard objectives remove WaterBossYoffset
+scoreboard objectives remove WaterBossZoffset
+
 scoreboard objectives remove WaterBossInnXrad
 scoreboard objectives remove WaterBossInnYrad
 scoreboard objectives remove WaterBossInnZrad

@@ -12,6 +12,10 @@ scoreboard objectives add WaterBossXpos dummy "Water Boss X Position"
 scoreboard objectives add WaterBossYpos dummy "Water Boss Y Position"
 scoreboard objectives add WaterBossZpos dummy "Water Boss Z Position"
 
+scoreboard objectives add WaterBossXoffset dummy "Water Boss X Offset"
+scoreboard objectives add WaterBossYoffset dummy "Water Boss Y Offset"
+scoreboard objectives add WaterBossZoffset dummy "Water Boss Z Offset"
+
 scoreboard objectives add WaterBossInnXrad dummy "Water Boss Inner X Radius"
 scoreboard objectives add WaterBossInnYrad dummy "Water Boss Inner Y Radius"
 scoreboard objectives add WaterBossInnZrad dummy "Water Boss Inner Z Radius"
@@ -37,11 +41,16 @@ execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"]
 execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] run scoreboard players set @s WaterBossZpos -1600
 
 # Inner radius #
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossInnXrad -0500
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossInnYrad -0800
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossInnZrad -0700
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossInnXrad -1200
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossInnYrad -0700
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossInnZrad -1200
 
 # Outer radius #
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossOutXrad 0500
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossOutYrad -0300
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossOutZrad 0700
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossOutXrad 1200
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossOutYrad 0400
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossOutZrad 1200
+
+# Random Offset #
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] store result score @s WaterBossXoffset run random value -0500..0500
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] store result score @s WaterBossYoffset run random value -0700..0300
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] store result score @s WaterBossZoffset run random value -0500..0500

@@ -8,6 +8,10 @@ execute as @e[scores={WaterBossXpos=..2147483647}   ] run tellraw @a [{"bold":tr
 execute as @e[scores={WaterBossYpos=..2147483647}   ] run tellraw @a [{"bold":true,"text":"[WaterBossYpos]"   },{"text":" "},{"bold":false,"selector":"@s"}," : ",{"bold":false,"score":{"name":"@s","objective":"WaterBossYpos"}}]
 execute as @e[scores={WaterBossZpos=..2147483647}   ] run tellraw @a [{"bold":true,"text":"[WaterBossZpos]"   },{"text":" "},{"bold":false,"selector":"@s"}," : ",{"bold":false,"score":{"name":"@s","objective":"WaterBossZpos"}}]
 
+execute as @e[scores={WaterBossXoffset=..2147483647}] run tellraw @a [{"bold":true,"text":"[WaterBossXoffset]"},{"text":" "},{"bold":false,"selector":"@s"}," : ",{"bold":false,"score":{"name":"@s","objective":"WaterBossXoffset"}}]
+execute as @e[scores={WaterBossYoffset=..2147483647}] run tellraw @a [{"bold":true,"text":"[WaterBossYoffset]"},{"text":" "},{"bold":false,"selector":"@s"}," : ",{"bold":false,"score":{"name":"@s","objective":"WaterBossYoffset"}}]
+execute as @e[scores={WaterBossZoffset=..2147483647}] run tellraw @a [{"bold":true,"text":"[WaterBossZoffset]"},{"text":" "},{"bold":false,"selector":"@s"}," : ",{"bold":false,"score":{"name":"@s","objective":"WaterBossZoffset"}}]
+
 execute as @e[scores={WaterBossMinXpos=..2147483647}] run tellraw @a [{"bold":true,"text":"[WaterBossMinXpos]"},{"text":" "},{"bold":false,"selector":"@s"}," : ",{"bold":false,"score":{"name":"@s","objective":"WaterBossMinXpos"}}]
 execute as @e[scores={WaterBossMinYpos=..2147483647}] run tellraw @a [{"bold":true,"text":"[WaterBossMinYpos]"},{"text":" "},{"bold":false,"selector":"@s"}," : ",{"bold":false,"score":{"name":"@s","objective":"WaterBossMinYpos"}}]
 execute as @e[scores={WaterBossMinZpos=..2147483647}] run tellraw @a [{"bold":true,"text":"[WaterBossMinZpos]"},{"text":" "},{"bold":false,"selector":"@s"}," : ",{"bold":false,"score":{"name":"@s","objective":"WaterBossMinZpos"}}]

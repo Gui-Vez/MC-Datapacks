@@ -18,9 +18,9 @@
 
 ### This mcfunction will be loaded only once per reload. ###
 
-
 # Notify the player that the datapack have been installed
 tellraw @a [{"text": "The Water Temple Boss Datapack has been activated.", "color": "yellow"}]
 
 # Reset the init trigger of the Datapack
 scoreboard players set $init init_boolean 0
+scoreboard players set @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] init_boolean 0
