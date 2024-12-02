@@ -1,4 +1,4 @@
-### Function that implements commands that are set once per reload. ###
+### Function that implements all scores and scoreboards. ###
 ## /function water_boss:scripts/_scores
 
 ###############

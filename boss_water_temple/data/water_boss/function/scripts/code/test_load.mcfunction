@@ -27,3 +27,10 @@ execute as @e[scores={WaterBossInnZrad=..2147483647}] run tellraw @a [{"bold":tr
 execute as @e[scores={WaterBossOutXrad=..2147483647}] run tellraw @a [{"bold":true,"text":"[WaterBossOutXrad]"},{"text":" "},{"bold":false,"selector":"@s"}," : ",{"bold":false,"score":{"name":"@s","objective":"WaterBossOutXrad"}}]
 execute as @e[scores={WaterBossOutYrad=..2147483647}] run tellraw @a [{"bold":true,"text":"[WaterBossOutYrad]"},{"text":" "},{"bold":false,"selector":"@s"}," : ",{"bold":false,"score":{"name":"@s","objective":"WaterBossOutYrad"}}]
 execute as @e[scores={WaterBossOutZrad=..2147483647}] run tellraw @a [{"bold":true,"text":"[WaterBossOutZrad]"},{"text":" "},{"bold":false,"selector":"@s"}," : ",{"bold":false,"score":{"name":"@s","objective":"WaterBossOutZrad"}}]
+
+# (Remove these lines at launch) #
+fill -87 4 9 -37 4 -41 minecraft:water[level=0] replace minecraft:cyan_stained_glass
+
+fill -87 4 9 -37 4 -41 minecraft:cyan_stained_glass replace minecraft:water[level=0]
+fill -87 3 9 -37 -8 -41 air replace water
+fill -87 0 9 -37 -11 -41 air replace water

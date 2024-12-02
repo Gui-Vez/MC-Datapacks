@@ -12,5 +12,6 @@ function water_boss:scripts/code/_set_positions
 # function water_boss:scripts/code/test_load
 
 # Tick #
+function water_boss:scripts/_effects
 schedule function water_boss:scripts/code/_detect_player_start 2t
 # function water_boss:scripts/code/test_tick
