@@ -1,8 +1,8 @@
 ## Tick ##
 
-#############
-# FUNCTIONS #
-#############
+##########
+# SCORES #
+##########
 
 ## Convert WaterBossPos score -> Position ##
 # Init #

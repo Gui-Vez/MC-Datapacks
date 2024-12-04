@@ -9,6 +9,7 @@
 function water_boss:scripts/code/_load_entities
 function water_boss:scripts/_scores
 function water_boss:scripts/code/_set_positions
+function water_boss:scripts/code/_set_rotations
 # function water_boss:scripts/code/test_load
 
 # Tick #

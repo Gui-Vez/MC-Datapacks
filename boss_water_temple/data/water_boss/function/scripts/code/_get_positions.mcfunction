@@ -1,8 +1,8 @@
 ## Load / Tick ##
 
-#############
-# FUNCTIONS #
-#############
+##########
+# SCORES #
+##########
 
 ## Convert Position -> WaterBossPos score ##
 # Init #

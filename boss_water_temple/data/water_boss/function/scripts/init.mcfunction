@@ -20,4 +20,4 @@ schedule function water_boss:scripts/_functions 1s replace
 scoreboard players set $init init_boolean 1
 
 # Notify the player that the functions have been installed
-# tellraw @a [{"text": "The Datapack has been initialized.", "color": "yellow"}]
+tellraw @a [{"text": "The Datapack has been initialized.", "color": "yellow"}]
