@@ -18,9 +18,11 @@
 
 ### This mcfunction will be loaded 20 in-game ticks per second. ###
 
-# Create a boolean that determines if the functions have been initialized, using a fake player
-scoreboard objectives add init_boolean dummy
+# Reload the datapack, if needed
+execute if entity @a as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Trigger"] unless entity @s[tag=Triggered] if score @s init_boolean matches 0 run function water_boss:reload
 
-# Call the init function only if it hasn't been called before
-execute unless score $init init_boolean matches 1 if entity @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] unless score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] init_boolean matches 1 run function water_boss:scripts/init
-execute unless score $init init_boolean matches 1 unless entity @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] run function water_boss:scripts/init
+# Call the init function only if the boss hasn't been triggered before
+execute if entity @a as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Trigger"] unless entity @s[tag=Triggered] if score @s init_boolean matches 1 run schedule function water_boss:scripts/init 1s append
+
+# Set the trigger boolean value to 1
+execute if entity @a as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Trigger"] unless entity @s[tag=Triggered] if score @s init_boolean matches 0 run scoreboard players set @s init_boolean 1

@@ -6,15 +6,12 @@
 ##########
 
 # Clear the scores
-# scoreboard objectives remove waterBossInit
-
 scoreboard objectives remove WaterBossXpos
 scoreboard objectives remove WaterBossYpos
 scoreboard objectives remove WaterBossZpos
 
 scoreboard objectives remove WaterBossXrot
 scoreboard objectives remove WaterBossYrot
-scoreboard objectives remove WaterBossZrot
 
 scoreboard objectives remove WaterBossXoffset
 scoreboard objectives remove WaterBossYoffset
