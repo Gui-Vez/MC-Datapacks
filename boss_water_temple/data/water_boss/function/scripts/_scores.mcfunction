@@ -15,6 +15,10 @@ scoreboard objectives add WaterBossZpos dummy "Water Boss Z Position"
 scoreboard objectives add WaterBossXrot dummy "Water Boss X Rotation"
 scoreboard objectives add WaterBossYrot dummy "Water Boss Y Rotation"
 
+scoreboard objectives add WaterBossXdir dummy "Water Boss X Direction"
+scoreboard objectives add WaterBossYdir dummy "Water Boss Y Direction"
+scoreboard objectives add WaterBossZdir dummy "Water Boss Z Direction"
+
 scoreboard objectives add WaterBossXoffset dummy "Water Boss X Offset"
 scoreboard objectives add WaterBossYoffset dummy "Water Boss Y Offset"
 scoreboard objectives add WaterBossZoffset dummy "Water Boss Z Offset"

@@ -13,5 +13,6 @@ schedule function water_boss:scripts/code/_clamp_positions 1t
 schedule function water_boss:scripts/code/_set_positions 1t
 schedule function water_boss:scripts/code/_set_rotations 1t
 schedule function water_boss:scripts/code/_move_by_commands 1t
+schedule function water_boss:scripts/code/_detect_walls 1t
 
 schedule function water_boss:scripts/code/_manage_movements 1t replace
