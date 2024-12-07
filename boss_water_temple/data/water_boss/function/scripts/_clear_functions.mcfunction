@@ -27,8 +27,9 @@ schedule clear water_boss:scripts/code/_unload_entities
 schedule clear water_boss:scripts/code/test_load
 schedule clear water_boss:scripts/code/test_tick
 
-schedule clear water_boss:scripts/_effects
-schedule clear water_boss:scripts/_functions
-schedule clear water_boss:scripts/_scores
+schedule clear water_boss:scripts/_run_effects
+schedule clear water_boss:scripts/_run_functions_load
+schedule clear water_boss:scripts/_run_functions_tick
+schedule clear water_boss:scripts/_run_scores
 
 schedule clear water_boss:scripts/init

@@ -18,11 +18,25 @@
 
 ### This mcfunction will be loaded 20 in-game ticks per second. ###
 
-# Reload the datapack, if needed
-execute if entity @a as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Trigger"] unless entity @s[tag=Triggered] if score @s init_boolean matches 0 run function water_boss:reload
+# If the player exited the game and loaded the back in, reload the datapack
+execute unless score $main init_boolean matches 1 if entity @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] run function water_boss:reload
 
-# Call the init function only if the boss hasn't been triggered before
-execute if entity @a as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Trigger"] unless entity @s[tag=Triggered] if score @s init_boolean matches 1 run schedule function water_boss:scripts/init 1s append
+# Create scoreboards to determines if the functions have been initialized, using a fake player
+scoreboard objectives add init_boolean dummy
+scoreboard objectives add delay_ticks dummy
+scoreboard objectives add WaterBossPhaseID dummy
 
-# Set the trigger boolean value to 1
-execute if entity @a as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Trigger"] unless entity @s[tag=Triggered] if score @s init_boolean matches 0 run scoreboard players set @s init_boolean 1
+# If the time has passed after a certain delay, the function will initialize
+execute if score $init delay_ticks matches 20.. run scoreboard players set $init init_boolean 1
+
+# Return the time passed back to 0
+execute if score $init delay_ticks matches 20.. run scoreboard players set $init delay_ticks 0
+
+# Incrementing the time passed as a delay to activate the script
+scoreboard players add $init delay_ticks 1
+
+# Call the init function only if it hasn't been called before
+execute if score $init init_boolean matches 1 unless score $load init_boolean matches 1 run function water_boss:scripts/init
+
+# Run the tick function if it has been initialized
+execute if score $init init_boolean matches 1 run function water_boss:scripts/_run_functions_tick

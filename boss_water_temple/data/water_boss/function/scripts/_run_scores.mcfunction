@@ -1,13 +1,11 @@
 ### Function that implements all scores and scoreboards. ###
-## /function water_boss:scripts/_scores
+## /function water_boss:scripts/_run_scores
 
 ###############
 # SCOREBOARDS #
 ###############
 
 ## Objectives ##
-scoreboard objectives add waterBossInit dummy "Water Boss Init"
-
 scoreboard objectives add WaterBossXpos dummy "Water Boss X Position"
 scoreboard objectives add WaterBossYpos dummy "Water Boss Y Position"
 scoreboard objectives add WaterBossZpos dummy "Water Boss Z Position"
@@ -40,7 +38,6 @@ scoreboard objectives add WaterBossMaxYpos dummy "Water Boss Maximum Y Position"
 scoreboard objectives add WaterBossMaxZpos dummy "Water Boss Maximum Z Position"
 
 ## Values ##
-scoreboard players set $world waterBossInit 0
 
 # Initial positions #
 execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] run scoreboard players set @s WaterBossXpos -6200
@@ -58,6 +55,6 @@ execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center
 execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossOutZrad 1200
 
 # Random Offset #
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] store result score @s WaterBossXoffset run random value -0500..0500
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] store result score @s WaterBossXoffset run random value -1000..1000
 execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] store result score @s WaterBossYoffset run random value -0700..0300
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] store result score @s WaterBossZoffset run random value -0500..0500
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] store result score @s WaterBossZoffset run random value -1000..1000
