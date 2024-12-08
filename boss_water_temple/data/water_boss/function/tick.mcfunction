@@ -17,15 +17,19 @@
 ###################################################################
 
 
-### This mcfunction will be loaded when the world is active. ###
+### This mcfunction will be loaded 20 in-game ticks per second. ###
 
-# Create scoreboards to determines if the functions have been initialized, using a fake player
-scoreboard objectives add init_boolean dummy
-scoreboard objectives add delay_ticks dummy
-scoreboard objectives add WaterBossPhaseID dummy
+# Call the init load function only if it hasn't been called before
+execute if score $init init_boolean matches 1 unless score $load init_boolean matches 1 run function water_boss:scripts/run_functions_load
 
-# If the datapack has not been initialized, reload it
-execute unless score $init init_boolean matches 1 run function water_boss:reload
+# Call the init tick function on repeat if it has been initialized
+execute if score $init init_boolean matches 1 run function water_boss:scripts/run_functions_tick
 
-# Notify the player that the datapack have been installed
-tellraw @a [{"text": "The Water Temple Boss Datapack has been activated.", "color": "yellow"}]
+# If the time has passed after a certain delay, the function will initialize
+execute if score $init delay_ticks matches 20.. run scoreboard players set $init init_boolean 1
+
+# Return the time passed back to 0
+execute if score $init delay_ticks matches 20.. run scoreboard players set $init delay_ticks 0
+
+# Incrementing the time passed as a delay to activate the script
+scoreboard players add $init delay_ticks 1

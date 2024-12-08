@@ -11,24 +11,35 @@
 #       - Shells124                                               #
 #                                                                 #
 #     Contributors:                                               #
-#       - Ariyusyli                                               #
 #       - HeyaItsSoup                                             #
+#       - Ariyusyli                                               #
 #                                                                 #
 ###################################################################
 
-### This mcfunction will be loaded 20 in-game ticks per second. ###
 
-# Call the init load function only if it hasn't been called before
-execute if score $init init_boolean matches 1 unless score $load init_boolean matches 1 run function water_boss:scripts/init_once_on_install
+### This mcfunction will be loaded when uninstalling the datapack. ###
 
-# Call the init loop function on repeat if it has been initialized
-execute if score $init init_boolean matches 1 run function water_boss:scripts/_run_functions_tick
+# Clear running functions
+function water_boss:scripts/clear_functions
 
-# If the time has passed after a certain delay, the function will initialize
-execute if score $init delay_ticks matches 20.. run scoreboard players set $init init_boolean 1
+# Clear existing scores
+function water_boss:scripts/clear_scores
 
-# Return the time passed back to 0
-execute if score $init delay_ticks matches 20.. run scoreboard players set $init delay_ticks 0
+# Clear existing effects
+function water_boss:scripts/clear_effects
 
-# Incrementing the time passed as a delay to activate the script
-scoreboard players add $init delay_ticks 1
+# Unload entities
+function water_boss:scripts/code/entities/unload_entities
+
+# Remove the init scoreboards
+scoreboard objectives remove init_boolean
+scoreboard objectives remove delay_ticks
+
+# Remove the phase ID scoreboard
+scoreboard objectives remove WaterBossPhaseID
+
+# Alert the player that the Datapack is no longer running
+tellraw @a [{"text": "The Datapack has been uninstalled.\nUse /datapack enable \"file/boss_water_temple\" to reinstall.", "color": "yellow"}]
+
+# Disable the Datapack
+datapack disable "file/boss_water_temple"

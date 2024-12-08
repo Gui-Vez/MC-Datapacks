@@ -11,5 +11,3 @@ execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Row Pi
 execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Depth"] at @s rotated as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Row"] run tp @s ~ ~ ~ facing ^1 ^ ^
 
 execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Depth"] at @s rotated as @s run tp @e[type=phantom, limit=1, tag=Water_Boss] ~ ~ ~ ~ ~
-
-# execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] at @s rotated as @s run tp @e[type=phantom, limit=1, tag=Water_Boss] ^ ^ ^5 ~ ~
