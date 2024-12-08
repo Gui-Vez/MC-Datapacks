@@ -1,5 +1,4 @@
-### Function that clears current effects. ###
-## /function water_boss:scripts/_clear_effects
+## Load ##
 
 ###########
 # EFFECTS #

@@ -1,5 +1,4 @@
-### File that runs all functions needed for the datapack ###
-## /function water_boss:scripts/_run_functions_tick
+## Tick ##
 
 #############
 # FUNCTIONS #

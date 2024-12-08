@@ -1,5 +1,4 @@
-### Function that clears existing scores. ###
-## /function water_boss:scripts/_clear_scores
+## Load ##
 
 ##########
 # SCORES #

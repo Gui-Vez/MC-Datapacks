@@ -1,5 +1,4 @@
-### Function that implements all scores and scoreboards. ###
-## /function water_boss:scripts/_run_scores
+## Load ##
 
 ###############
 # SCOREBOARDS #

@@ -1,5 +1,4 @@
-### Function that disables the Datapack. ###
-## /function water_boss:scripts/uninstall
+## Load ##
 
 #############
 # FUNCTIONS #

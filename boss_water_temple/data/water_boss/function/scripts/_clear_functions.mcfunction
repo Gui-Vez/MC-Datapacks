@@ -1,5 +1,4 @@
-### Function that clears functions that are run on loop. ###
-## /function water_boss:scripts/_clear_functions
+## Load ##
 
 #############
 # FUNCTIONS #
@@ -32,4 +31,5 @@ schedule clear water_boss:scripts/_run_functions_load
 schedule clear water_boss:scripts/_run_functions_tick
 schedule clear water_boss:scripts/_run_scores
 
-schedule clear water_boss:scripts/init
+schedule clear water_boss:scripts/init_on_loop
+schedule clear water_boss:scripts/init_once_on_install
