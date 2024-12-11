@@ -5,6 +5,8 @@
 ###############
 
 ## Objectives ##
+scoreboard objectives add const dummy "Constant Value"
+
 scoreboard objectives add WaterBossXpos dummy "Water Boss X Position"
 scoreboard objectives add WaterBossYpos dummy "Water Boss Y Position"
 scoreboard objectives add WaterBossZpos dummy "Water Boss Z Position"
@@ -37,6 +39,9 @@ scoreboard objectives add WaterBossMaxYpos dummy "Water Boss Maximum Y Position"
 scoreboard objectives add WaterBossMaxZpos dummy "Water Boss Maximum Z Position"
 
 ## Values ##
+
+# Constant values
+scoreboard players set -1 const -1
 
 # Initial positions #
 execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] run scoreboard players set @s WaterBossXpos -6200

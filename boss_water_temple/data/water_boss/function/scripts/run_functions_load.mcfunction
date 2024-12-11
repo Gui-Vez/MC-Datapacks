@@ -4,7 +4,7 @@
 # FUNCTIONS #
 #############
 
-# Load #
+# Load Test #
 # function water_boss:scripts/code/test/test_load
 
 execute unless entity @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] run function water_boss:scripts/code/entities/load_entities

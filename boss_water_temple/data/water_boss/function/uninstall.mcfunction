@@ -31,6 +31,9 @@ function water_boss:scripts/clear_effects
 # Unload entities
 function water_boss:scripts/code/entities/unload_entities
 
+# Remove tags
+function water_boss:scripts/code/entities/remove_tags
+
 # Remove the init scoreboards
 scoreboard objectives remove init_boolean
 scoreboard objectives remove delay_ticks

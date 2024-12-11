@@ -27,6 +27,9 @@ function water_boss:scripts/clear_scores
 # Remove pre-existing entities
 function water_boss:scripts/code/entities/unload_entities
 
+# Remove pre-existing tags
+function water_boss:scripts/code/entities/remove_tags
+
 # Reset the init variables of the Datapack
 scoreboard players set $init delay_ticks 0
 scoreboard players set $init init_boolean 0
