@@ -11,7 +11,8 @@ The datapack folders contained within this project are currently open sourced, m
 | Datapack | Description |
 |--|--|
 | !datapack_template | Template for creating Datapacks. |
-| slime_king | Slime King Boss |
+| boss_water_temple | Water Temple Boss used in TLoA |
+| slime_king | Slime King Boss used as an intro to DPs |
 
 
 ## Redistribution

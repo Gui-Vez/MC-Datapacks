@@ -5,8 +5,8 @@
 #############
 
 # Tick Test #
-# execute if score $init delay_ticks matches 19.. run schedule function water_boss:scripts/code/test/test_tick 2t
-function water_boss:scripts/code/test/test_tick
+execute if score $init delay_ticks matches 19.. run schedule function water_boss:scripts/code/test/test_tick 2t
+# function water_boss:scripts/code/test/test_tick
 
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 0.. run function water_boss:scripts/run_effects
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 1 run schedule function water_boss:scripts/code/functions/1_detect_player_start 1t
