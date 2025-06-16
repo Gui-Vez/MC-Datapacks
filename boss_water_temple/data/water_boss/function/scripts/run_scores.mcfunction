@@ -1,4 +1,4 @@
-## Load ##
+## Creates all scores | Once ##
 
 ###############
 # SCOREBOARDS #

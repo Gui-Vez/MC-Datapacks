@@ -1,4 +1,4 @@
-## Tick ##
+## Gives effects to entities | Repeat ##
 
 ###########
 # EFFECTS #

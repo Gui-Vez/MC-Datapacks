@@ -1,4 +1,17 @@
-## Tick ##
+## Phase 3 | Repeat ##
+
+# > Get the position and rotation values of armor stands
+# > Restrict values to absolute scores
+# > Restrict values inside borders of arena
+# > Move the armor stands by scores
+
+# > Ensure that the Min and Max scores are set to be in bounds
+# > Set the position and rotation values of armor stands
+# > Move the armor stands by commands
+# > Change directions of armor stands
+# > Allow or deny armor stands to rotate
+# > Allow or deny armor stands to translate
+# > Restrict values to absolute scores
 
 #############
 # FUNCTIONS #

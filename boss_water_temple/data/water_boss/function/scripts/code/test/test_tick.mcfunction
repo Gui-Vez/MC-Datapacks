@@ -1,4 +1,8 @@
-## Tick ##
+## Test function | Repeat ##
+
+#############
+# FUNCTIONS #
+#############
 
 # Notify the player that the Datapack is running, used for debugging
 # say Tick

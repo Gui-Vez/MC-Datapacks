@@ -1,10 +1,9 @@
-## Tick ##
+## Convert scores into rotation values | Repeat ##
 
 ##########
 # SCORES #
 ##########
 
-## Convert WaterBossPos score -> Rotation ##
 # Init #
 execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"     ] store result entity @s Rotation[1] float 0.01 run scoreboard players get @s WaterBossXrot
 execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"     ] store result entity @s Rotation[0] float 0.01 run scoreboard players get @s WaterBossYrot

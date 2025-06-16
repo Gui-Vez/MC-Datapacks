@@ -1,4 +1,7 @@
-## Load ##
+## Phase 2 | Once ##
+
+# > Teleports armor stands inside arena
+# > Randomizes scores
 
 #############
 # FUNCTIONS #

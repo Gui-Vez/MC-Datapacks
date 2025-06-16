@@ -1,4 +1,4 @@
-## Tick ##
+## Runs functions | Repeat ##
 
 #############
 # FUNCTIONS #

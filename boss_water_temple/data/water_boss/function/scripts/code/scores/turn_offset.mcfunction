@@ -1,4 +1,4 @@
-## Load ##
+## Sets the offset for the rotational speed | Once ##
 
 ##########
 # SCORES #

@@ -1,4 +1,4 @@
-## Load ##
+## Randomize the direction in which armor stands move | Once ##
 
 ##########
 # SCORES #

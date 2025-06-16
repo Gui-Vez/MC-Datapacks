@@ -1,4 +1,4 @@
-## Tick ##
+## Move entities manually by score | Repeat ##
 
 ##########
 # SCORES #

@@ -1,4 +1,4 @@
-## Load ##
+## Runs functions | Once ##
 
 #############
 # FUNCTIONS #

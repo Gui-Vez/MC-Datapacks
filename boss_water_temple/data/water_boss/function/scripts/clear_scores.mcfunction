@@ -1,4 +1,4 @@
-## Load ##
+## Remove all scores and objectives | Once ##
 
 ##########
 # SCORES #
