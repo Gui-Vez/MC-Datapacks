@@ -9,3 +9,6 @@ execute at @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Depth"
 
 # TP Phantom to Depth
 execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Depth"] at @s rotated as @s run tp @e[type=phantom, limit=1, tag=Water_Boss] ~ ~ ~ ~ ~
+
+# Move needle towards player
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] at @s facing entity @p[gamemode=!spectator] eyes run tp @e[type=firework_rocket, tag=Needle] ^ ^ ^0.25

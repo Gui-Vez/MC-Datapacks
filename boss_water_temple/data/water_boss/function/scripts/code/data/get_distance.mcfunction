@@ -1,3 +1,9 @@
+## Obtain the distance between two points in the arena | Once ##
+
+#############
+# FUNCTIONS #
+#############
+
 # Store endpoint positions of armor stands into micros
 data modify storage main dist.pos1 set from entity @e[type=armor_stand, name="dist.pos1", limit=1] Pos
 data modify storage main dist.pos2 set from entity @e[type=armor_stand, name="dist.pos2", limit=1] Pos
@@ -17,6 +23,6 @@ scoreboard players operation dist.pos.Y2 VAR -= dist.pos.Y1 VAR
 scoreboard players operation dist.pos.Z2 VAR -= dist.pos.Z1 VAR
 
 # Store deltas in storage
-execute store result storage main dist.macro.x double 0.0010 run scoreboard players get dist.pos.X2 VAR
-execute store result storage main dist.macro.y double 0.0010 run scoreboard players get dist.pos.Y2 VAR
-execute store result storage main dist.macro.z double 0.0010 run scoreboard players get dist.pos.Z2 VAR
+execute store result storage main dist.macro.x double 0.001 run scoreboard players get dist.pos.X2 VAR
+execute store result storage main dist.macro.y double 0.001 run scoreboard players get dist.pos.Y2 VAR
+execute store result storage main dist.macro.z double 0.001 run scoreboard players get dist.pos.Z2 VAR
