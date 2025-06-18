@@ -5,7 +5,8 @@
 ##########
 
 # Clear the scores
-scoreboard objectives remove const
+scoreboard objectives remove VAR
+scoreboard objectives remove CONST
 scoreboard objectives remove turningSpeed
 
 scoreboard objectives remove WaterBossXpos

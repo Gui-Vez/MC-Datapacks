@@ -5,7 +5,8 @@
 ###############
 
 ## Objectives ##
-scoreboard objectives add const dummy "Constant Value"
+scoreboard objectives add VAR dummy "Variable Value"
+scoreboard objectives add CONST dummy "Constant Value"
 scoreboard objectives add turningSpeed dummy "Turning Speed"
 
 scoreboard objectives add WaterBossXpos dummy "Water Boss X Position"
@@ -42,10 +43,11 @@ scoreboard objectives add WaterBossMaxZpos dummy "Water Boss Maximum Z Position"
 ## Values ##
 
 # Constant values
-scoreboard players set -1 const -1
-scoreboard players set 00000 const 00000
-scoreboard players set 18000 const 18000
-scoreboard players set 36000 const 36000
+scoreboard players set -1 CONST -1
+
+scoreboard players set 00000 CONST 00000
+scoreboard players set 18000 CONST 18000
+scoreboard players set 36000 CONST 36000
 
 # Rotational speeds
 scoreboard players set $leftTurnSpeed turningSpeed 750
