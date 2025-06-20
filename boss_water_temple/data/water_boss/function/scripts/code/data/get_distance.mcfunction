@@ -5,8 +5,8 @@
 #############
 
 # Store endpoint positions of armor stands into micros
-data modify storage main dist.pos1 set from entity @e[type=armor_stand, name="dist.pos1", limit=1] Pos
-data modify storage main dist.pos2 set from entity @e[type=armor_stand, name="dist.pos2", limit=1] Pos
+data modify storage main dist.pos1 set from entity @e[type=armor_stand, name="Water Boss f000", limit=1] Pos
+data modify storage main dist.pos2 set from entity @e[type=armor_stand, name="Water Boss f100", limit=1] Pos
 
 # Initialize position variables of point 1 and point 2
 execute store result score dist.pos.X1 VAR run data get storage main dist.pos1[0] 1000

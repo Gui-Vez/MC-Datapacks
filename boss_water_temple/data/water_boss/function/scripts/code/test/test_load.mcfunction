@@ -7,7 +7,6 @@
 # Notify the player that the Datapack is running, used for debugging
 say Load
 
-execute as @e[type=armor_stand, name="dist.pos1", limit=1] run tellraw @a [{"bold":true,"text":"[Pos]"   },{"text":" "},{"bold":false,"selector":"@s"}," : ",{"bold":false,"score":{"name":"@s","objective":"WaterBossXpos"}}]
 
 # (Remove these lines at launch) #
 fill -87 4 9 -37 4 -41 minecraft:water[level=0] replace minecraft:cyan_stained_glass
@@ -16,12 +15,18 @@ fill -87 4 9 -37 4 -41 minecraft:cyan_stained_glass replace minecraft:water[leve
 fill -87 3 9 -37 -8 -41 air replace water
 fill -87 0 9 -37 -11 -41 air replace water
 
+# Boss phases
+scoreboard players get @e[type=minecraft:armor_stand, name="Water Boss Init", limit=1] WaterBossPhaseID
+scoreboard players get $PhaseTimerLimit VAR
+
 # Micro and macro points
 data get storage main dist.pos1
 data get storage main dist.pos2
 
 data get storage main dist.macro
 data get storage main half.macro
+
+# execute as @e[type=armor_stand, name="dist.pos1", limit=1] run tellraw @a [{"bold":true,"text":"[Pos]"   },{"text":" "},{"bold":false,"selector":"@s"}," : ",{"bold":false,"score":{"name":"@s","objective":"WaterBossXpos"}}]
 
 ## Armor stands position debug ##
 # execute as @e[scores={WaterBossXpos=..2147483647}   ] run tellraw @a [{"bold":true,"text":"[WaterBossXpos]"   },{"text":" "},{"bold":false,"selector":"@s"}," : ",{"bold":false,"score":{"name":"@s","objective":"WaterBossXpos"}}]

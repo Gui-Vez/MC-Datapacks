@@ -40,6 +40,8 @@ scoreboard objectives add WaterBossMaxXpos dummy "Water Boss Maximum X Position"
 scoreboard objectives add WaterBossMaxYpos dummy "Water Boss Maximum Y Position"
 scoreboard objectives add WaterBossMaxZpos dummy "Water Boss Maximum Z Position"
 
+scoreboard objectives add WaterBossPhaseID dummy "Water Boss Phase ID"
+
 ## Values ##
 
 # Constant values
