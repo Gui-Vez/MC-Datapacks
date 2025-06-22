@@ -17,17 +17,17 @@
 # FUNCTIONS #
 #############
 
-execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 3 run function water_boss:scripts/code/data/get_positions
-execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 3 run function water_boss:scripts/code/data/get_rotations
-execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 3 run function water_boss:scripts/code/scores/abs_value
-execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 3 run function water_boss:scripts/code/scores/min_max_borders
-execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 3 run function water_boss:scripts/code/scores/move_by_score
+function water_boss:scripts/code/data/get_positions
+function water_boss:scripts/code/data/get_rotations
+function water_boss:scripts/code/scores/abs_value
+function water_boss:scripts/code/scores/min_max_borders
+function water_boss:scripts/code/scores/move_by_score
 
-execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 3 run schedule function water_boss:scripts/code/scores/clamp_positions 1t
-execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 3 run schedule function water_boss:scripts/code/data/set_positions 1t
-execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 3 run schedule function water_boss:scripts/code/data/set_rotations 1t
-execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 3 run schedule function water_boss:scripts/code/entities/move_by_commands 1t
-execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 3 run schedule function water_boss:scripts/code/scores/detect_walls 1t
-execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 3 run schedule function water_boss:scripts/code/entities/toggle_rotation 1t
-execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 3 run schedule function water_boss:scripts/code/entities/toggle_translation 1t
-execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 3 run schedule function water_boss:scripts/code/scores/abs_value 1t
+schedule function water_boss:scripts/code/scores/clamp_positions 1t
+schedule function water_boss:scripts/code/data/set_positions 1t
+schedule function water_boss:scripts/code/data/set_rotations 1t
+schedule function water_boss:scripts/code/entities/move_by_commands 1t
+schedule function water_boss:scripts/code/scores/detect_walls 1t
+schedule function water_boss:scripts/code/entities/toggle_rotation 1t
+schedule function water_boss:scripts/code/entities/toggle_translation 1t
+schedule function water_boss:scripts/code/scores/abs_value 1t

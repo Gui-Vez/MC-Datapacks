@@ -1,4 +1,4 @@
-## Phase 4 | Repeat ##
+## Phase 4 | Once ##
 
 # > Make the phantom stay in place
 # > Rotate the phantom to face the center of the arena
@@ -11,9 +11,8 @@
 #############
 
 function water_boss:scripts/code/entities/place_waypoints
+function water_boss:scripts/code/entities/ascend_waypoints
 
-function water_boss:scripts/code/data/get_distance
-function water_boss:scripts/code/data/get_regular_waypoints with storage main dist.macro
-function water_boss:scripts/code/data/get_offset_waypoints with storage main dist.macro
-function water_boss:scripts/code/scores/set_waypoint_scores with storage main dist.macro
-function water_boss:scripts/code/data/set_waypoints with storage main dist.macro
+schedule function water_boss:scripts/code/entities/move_by_commands 1t
+
+scoreboard players set $WaypointID VAR 0

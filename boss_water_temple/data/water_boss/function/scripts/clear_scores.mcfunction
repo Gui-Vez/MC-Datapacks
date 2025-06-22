@@ -39,3 +39,5 @@ scoreboard objectives remove WaterBossMinZpos
 scoreboard objectives remove WaterBossMaxXpos
 scoreboard objectives remove WaterBossMaxYpos
 scoreboard objectives remove WaterBossMaxZpos
+
+scoreboard objectives remove WaterBossPhaseID
