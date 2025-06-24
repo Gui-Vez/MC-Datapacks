@@ -1,4 +1,4 @@
-## Load ##
+## Randomize the position offset in which armor stands get teleported in | Once ##
 
 ##########
 # SCORES #

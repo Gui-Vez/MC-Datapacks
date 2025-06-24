@@ -1,4 +1,4 @@
-## Load ##
+## Define borders with Min and Max scores | Repeat ##
 
 ##########
 # SCORES #

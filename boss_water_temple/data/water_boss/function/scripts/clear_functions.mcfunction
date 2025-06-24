@@ -1,4 +1,4 @@
-## Load ##
+## Stops functions | Once ##
 
 #############
 # FUNCTIONS #

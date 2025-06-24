@@ -22,7 +22,6 @@
 # Create scoreboards to determines if the functions have been initialized, using a fake player
 scoreboard objectives add init_boolean dummy
 scoreboard objectives add delay_ticks dummy
-scoreboard objectives add WaterBossPhaseID dummy
 
 # If the datapack has not been initialized, reload it
 execute unless score $init init_boolean matches 1 run function water_boss:reload

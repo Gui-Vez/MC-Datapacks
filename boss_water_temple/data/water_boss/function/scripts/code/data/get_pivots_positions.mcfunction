@@ -1,10 +1,9 @@
-## Load / Tick ##
+## Convert position values into scores | Repeat ##
 
-##########
-# SCORES #
-##########
+########
+# DATA #
+########
 
-## Convert Position -> WaterBossPos score ##
 # Init #
 execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"     ] store result score @s WaterBossXpos run data get entity @s Pos[0] 100
 execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"     ] store result score @s WaterBossYpos run data get entity @s Pos[1] 100

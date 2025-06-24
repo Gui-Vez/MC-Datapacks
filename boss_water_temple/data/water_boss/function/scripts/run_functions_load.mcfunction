@@ -1,4 +1,4 @@
-## Load ##
+## Runs functions | Once ##
 
 #############
 # FUNCTIONS #
@@ -11,10 +11,15 @@ execute unless entity @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water 
 
 function water_boss:scripts/run_scores
 function water_boss:scripts/code/entities/remove_tags
-function water_boss:scripts/code/scores/set_positions
-function water_boss:scripts/code/scores/set_rotations
+function water_boss:scripts/code/data/set_pivots_positions
+function water_boss:scripts/code/data/set_pivots_rotations
 
-scoreboard players set @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID 1
+scoreboard players set @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID 0
+
+# Phases
+scoreboard players set $NewPhase VAR 0
+scoreboard players set $PhaseTimer VAR 0
+scoreboard players set $PhaseTimerLimit VAR 0
 
 scoreboard players set $load init_boolean 1
 

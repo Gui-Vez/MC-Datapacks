@@ -1,4 +1,7 @@
-## Tick ##
+## Phase 1 | Repeat ##
+
+# > Teleports the boss out of bounds
+# > Detects players in the arena
 
 #############
 # FUNCTIONS #

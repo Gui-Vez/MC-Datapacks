@@ -1,4 +1,4 @@
-## Tick ##
+## Change direction of armor stand upon hitting an invisible wall | Repeat ##
 
 ##########
 # SCORES #

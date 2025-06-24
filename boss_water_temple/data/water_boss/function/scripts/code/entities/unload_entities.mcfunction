@@ -1,4 +1,4 @@
-## Load ##
+## Remove entities | Once ##
 
 ############
 # ENTITIES #

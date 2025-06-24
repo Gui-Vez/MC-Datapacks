@@ -1,4 +1,4 @@
-## Tick ##
+## Assign pos scores within hierarchy, while staying in bounds of arena | Repeat ##
 
 ##########
 # SCORES #

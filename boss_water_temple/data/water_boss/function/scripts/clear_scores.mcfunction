@@ -1,11 +1,12 @@
-## Load ##
+## Remove all scores and objectives | Once ##
 
 ##########
 # SCORES #
 ##########
 
 # Clear the scores
-scoreboard objectives remove const
+scoreboard objectives remove VAR
+scoreboard objectives remove CONST
 scoreboard objectives remove turningSpeed
 
 scoreboard objectives remove WaterBossXpos
@@ -38,3 +39,5 @@ scoreboard objectives remove WaterBossMinZpos
 scoreboard objectives remove WaterBossMaxXpos
 scoreboard objectives remove WaterBossMaxYpos
 scoreboard objectives remove WaterBossMaxZpos
+
+scoreboard objectives remove WaterBossPhaseID

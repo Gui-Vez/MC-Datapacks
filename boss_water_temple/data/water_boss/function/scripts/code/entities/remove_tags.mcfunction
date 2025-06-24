@@ -1,4 +1,4 @@
-## Load ##
+## Removes tags from entities | Once ##
 
 ########
 # TAGS #

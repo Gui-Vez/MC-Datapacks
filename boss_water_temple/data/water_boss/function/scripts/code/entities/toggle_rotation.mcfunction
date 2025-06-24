@@ -1,4 +1,5 @@
-## Load ##
+## Tag armor stands to allow or deny them from rotating
+## depending on their position in the arena | Repeat ##
 
 ########
 # TAGS #

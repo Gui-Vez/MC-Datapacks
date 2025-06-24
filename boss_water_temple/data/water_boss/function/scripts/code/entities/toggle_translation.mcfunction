@@ -1,4 +1,5 @@
-## Load ##
+## Tag armor stands to allow or deny them from translating
+## depending on their position and rotation in the arena | Repeat ##
 
 ########
 # TAGS #

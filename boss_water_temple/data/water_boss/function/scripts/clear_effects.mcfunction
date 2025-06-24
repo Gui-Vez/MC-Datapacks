@@ -1,4 +1,4 @@
-## Load ##
+## Removes effects from entities | Once ##
 
 ###########
 # EFFECTS #
