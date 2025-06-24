@@ -11,7 +11,7 @@
 #############
 
 function water_boss:scripts/code/entities/place_waypoints
-function water_boss:scripts/code/entities/ascend_waypoints
+function water_boss:scripts/code/entities/manage_waypoints
 
 schedule function water_boss:scripts/code/entities/move_by_commands 1t
 

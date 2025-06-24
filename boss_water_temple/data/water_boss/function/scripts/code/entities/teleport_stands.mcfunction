@@ -1,8 +1,8 @@
 ## Initialize armor stand position and rotation values | Once ##
 
-#############
-# FUNCTIONS #
-#############
+############
+# ENTITIES #
+############
 
 # (Note : Change coordinates to the middle of the Boss room)
 execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"  ] at @s run tp @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"   ] ^ ^-10 ^ -90 0

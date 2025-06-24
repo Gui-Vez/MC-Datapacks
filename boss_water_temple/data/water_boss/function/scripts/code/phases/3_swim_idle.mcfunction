@@ -17,15 +17,15 @@
 # FUNCTIONS #
 #############
 
-function water_boss:scripts/code/data/get_positions
-function water_boss:scripts/code/data/get_rotations
+function water_boss:scripts/code/data/get_pivots_positions
+function water_boss:scripts/code/data/get_pivots_rotations
 function water_boss:scripts/code/scores/abs_value
 function water_boss:scripts/code/scores/min_max_borders
 function water_boss:scripts/code/scores/move_by_score
 
 schedule function water_boss:scripts/code/scores/clamp_positions 1t
-schedule function water_boss:scripts/code/data/set_positions 1t
-schedule function water_boss:scripts/code/data/set_rotations 1t
+schedule function water_boss:scripts/code/data/set_pivots_positions 1t
+schedule function water_boss:scripts/code/data/set_pivots_rotations 1t
 schedule function water_boss:scripts/code/entities/move_by_commands 1t
 schedule function water_boss:scripts/code/scores/detect_walls 1t
 schedule function water_boss:scripts/code/entities/toggle_rotation 1t

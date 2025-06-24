@@ -11,8 +11,8 @@ execute unless entity @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water 
 
 function water_boss:scripts/run_scores
 function water_boss:scripts/code/entities/remove_tags
-function water_boss:scripts/code/data/set_positions
-function water_boss:scripts/code/data/set_rotations
+function water_boss:scripts/code/data/set_pivots_positions
+function water_boss:scripts/code/data/set_pivots_rotations
 
 scoreboard players set @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID 0
 

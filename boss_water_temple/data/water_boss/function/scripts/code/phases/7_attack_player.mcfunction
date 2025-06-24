@@ -13,10 +13,3 @@
 
 # Aim needle towards player
 # execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] at @s facing entity @p[gamemode=!spectator] eyes run tp @e[type=firework_rocket, tag=Needle] ^ ^ ^0.25
-
-
-# Use macros and scores to change motion of a projectile
-## Note to self: take inspiration from those functions:
-### get_distance
-### get_waypoints
-### set_waypoints
