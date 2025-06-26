@@ -1,4 +1,4 @@
-## Remove all scores and objectives | Once ##
+## Removes all scores and objectives | Once ##
 
 ##########
 # SCORES #

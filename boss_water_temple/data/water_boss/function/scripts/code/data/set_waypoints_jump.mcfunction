@@ -1,10 +1,9 @@
-## Set the position of waypoints to armor stands | Once ##
+## Teleport the armor stand in relation to the distance fractiles of the endpoint | Once ##
 
 ########
 # DATA #
 ########
 
-# Teleport the armor stand in relation to the distance fractiles of the endpoint
 data modify entity @e[type=armor_stand, tag=Water_Boss, name="Water Boss f000", limit=1] Pos[0] set from storage main f000.macro.x
 data modify entity @e[type=armor_stand, tag=Water_Boss, name="Water Boss f000", limit=1] Pos[1] set from storage main f000.macro.y
 data modify entity @e[type=armor_stand, tag=Water_Boss, name="Water Boss f000", limit=1] Pos[2] set from storage main f000.macro.z

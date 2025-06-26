@@ -10,6 +10,8 @@
 # FUNCTIONS #
 #############
 
+function water_boss:scripts/code/data/set_waypoints_jump with storage main dist.macro
+
 function water_boss:scripts/code/entities/place_waypoints
 function water_boss:scripts/code/entities/manage_waypoints
 

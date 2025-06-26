@@ -1,4 +1,4 @@
-## Phase 9 | Once ##
+## Phase 9 | Repeat ##
 
 # > The phantom dives down underwater
 # > The phantom will lurk underwater until the next attack

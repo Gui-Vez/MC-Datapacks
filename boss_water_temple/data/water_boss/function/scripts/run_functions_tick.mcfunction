@@ -5,8 +5,7 @@
 #############
 
 # Tick Test #
-execute if score $init delay_ticks matches 19.. run schedule function water_boss:scripts/code/test/test_tick 2t
-# function water_boss:scripts/code/test/test_tick
+execute if score $init delay_ticks matches 20.. run schedule function water_boss:scripts/code/test/test_tick 1t
 
 function water_boss:scripts/run_effects
 
@@ -34,6 +33,7 @@ execute unless score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water B
 execute unless score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 09 run schedule clear water_boss:scripts/code/phases/9_dive_back
 execute unless score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 10 run schedule clear water_boss:scripts/code/phases/10_reset_phases
 
+execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] if score @s WaterBossPhaseID matches ..-1 run scoreboard players set @s WaterBossPhaseID 0
 execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] if score @s WaterBossPhaseID matches 11.. run scoreboard players set @s WaterBossPhaseID 3
 
 schedule function water_boss:scripts/run_functions_tick 1t
