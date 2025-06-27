@@ -2,7 +2,6 @@
 
 # > The phantom dives down underwater
 # > The phantom will lurk underwater until the next attack
-# > The phantom will not be vulnerable to the player while underwater (?)
 
 #############
 # FUNCTIONS #

@@ -13,12 +13,29 @@ execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss 
 ## Phase 4)
 # TP Phantom to Depth, facing next waypoint
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 4 as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Depth"] at @s facing entity @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss f025"] eyes rotated ~ ~90 as @e[type=phantom, limit=1, tag=Water_Boss] run tp @s ~ ~ ~ ~ ~
+# Rotate Center on a 180° angle from Phantom
+execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 4 as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] at @s facing entity @e[type=phantom, limit=1, tag=Water_Boss] eyes rotated ~180 ~ run tp @s ~ ~ ~ ~ ~
 
 ## Phase 6)
+# Rotate Center on its own pivot
+execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 6 as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] at @s run tp @s ~ ~ ~ ~10 ~-0.6
 # TP phantom to the last waypoint, looking at the player
-execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 6 if score $WaypointID VAR matches 4 as @e[type=phantom, limit=1, tag=Water_Boss] at @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss f100"] facing entity @p[gamemode=!spectator] eyes run tp @s ^ ^ ^ ~ ~0
+# execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 6 if score $WaypointID VAR matches 4 as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] at @s positioned ~ ~12 ~ rotated as @s as @e[type=phantom, limit=1, tag=Water_Boss] facing entity @p[gamemode=!spectator] eyes run tp @s ~ ~ ~ ~ ~
+execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 6 if score $WaypointID VAR matches 4 as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] at @s positioned ~ ~12 ~ rotated as @s as @e[type=phantom, limit=1, tag=Water_Boss] run tp @s ~ ~ ~ ~ ~
+# Teleport cardinal points to their respective platforms
+execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 6 as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] at @s run tp @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Platform N"] ~00 ~10 ~-20
+execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 6 as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] at @s run tp @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Platform S"] ~00 ~10 ~20
+execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 6 as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] at @s run tp @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Platform E"] ~20 ~10 ~00
+execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 6 as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] at @s run tp @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Platform W"] ~-20 ~10 ~00
+
+execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 6 as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] at @s run tp @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Platform NE"] ~18 ~20 ~-18
+execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 6 as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] at @s run tp @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Platform NW"] ~-18 ~20 ~-18
+execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 6 as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] at @s run tp @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Platform SE"] ~18 ~20 ~18
+execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 6 as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] at @s run tp @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Platform SW"] ~-18 ~20 ~18
 
 ## Phase 7)
+# Move phantom towards targeted platform or player
+execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 7 as @e[type=phantom, limit=1, tag=Water_Boss] at @s facing entity @e[tag=Targeted, distance=..100, limit=1, sort=nearest] eyes rotated ~ 30 facing entity @e[tag=Targeted, distance=..100, limit=1, sort=nearest] eyes run tp @s ^ ^ ^0.25 ~ ~
 # Move needle towards player
 # execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] at @s facing entity @p[gamemode=!spectator] eyes run tp @e[type=firework_rocket, tag=Needle] ^ ^ ^0.25
 

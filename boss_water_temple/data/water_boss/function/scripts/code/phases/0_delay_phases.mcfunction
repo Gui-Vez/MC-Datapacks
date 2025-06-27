@@ -14,8 +14,8 @@ execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss 
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 03 run scoreboard players set $PhaseTimerLimit VAR 0100
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 04 run scoreboard players set $PhaseTimerLimit VAR 0020
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 05 run scoreboard players set $PhaseTimerLimit VAR -000
-execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 06 run scoreboard players set $PhaseTimerLimit VAR 0030
-execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 07 run scoreboard players set $PhaseTimerLimit VAR 0070
+execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 06 run scoreboard players set $PhaseTimerLimit VAR 0050
+execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 07 run scoreboard players set $PhaseTimerLimit VAR 0100
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 08 run scoreboard players set $PhaseTimerLimit VAR 0001
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 09 run scoreboard players set $PhaseTimerLimit VAR -000
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 10 run scoreboard players set $PhaseTimerLimit VAR 0005

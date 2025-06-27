@@ -1,6 +1,7 @@
 ## Phase 6 | Repeat ##
 
 # > Make the phantom hover in place
+# > Target the nearest platform to the player
 # > Make the phantom vulnerable to the player by a trident attack
 # > Repeat a few attacks until it gets hit or the phase changes
 
@@ -9,3 +10,5 @@
 #############
 
 function water_boss:scripts/code/entities/move_by_commands
+
+schedule function water_boss:scripts/code/entities/target_platform 15t
