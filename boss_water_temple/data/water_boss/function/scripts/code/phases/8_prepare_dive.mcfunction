@@ -7,6 +7,11 @@
 # FUNCTIONS #
 #############
 
+scoreboard players set $AttackTimer VAR 0
+
+tag @e remove WB_Targeted
+tag @a remove WB_Marked
+
 function water_boss:scripts/code/data/set_waypoints_dive with storage main dist.macro
 
 schedule function water_boss:scripts/code/entities/move_by_commands 1t
