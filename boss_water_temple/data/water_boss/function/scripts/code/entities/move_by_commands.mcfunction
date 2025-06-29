@@ -36,13 +36,12 @@ execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss 
 # Move phantom towards targeted platform or player
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 7 unless score $AttackID VAR matches 1.. as @e[type=phantom, limit=1, tag=Water_Boss] at @s facing entity @e[tag=WB_Targeted, distance=..100, limit=1, sort=nearest] eyes rotated ~ 30 facing entity @e[tag=WB_Targeted, distance=..100, limit=1, sort=nearest] eyes run tp @s ^ ^ ^0.25 ~ ~
 # TP phantom to its own position, facing the player
-execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 7 if score $AttackID VAR matches 1..6 as @e[type=phantom, limit=1, tag=Water_Boss] at @s facing entity @p[gamemode=!spectator] eyes rotated ~ ~ run tp @s ^ ^ ^ ~ ~
+execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 7 if score $AttackID VAR matches 1..6 as @e[type=phantom, limit=1, tag=Water_Boss] at @s facing entity @p[gamemode=!spectator] eyes rotated ~ -10 run tp @s ^ ^ ^ ~ ~
 # Move phantom towards center of arena
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 7 if score $AttackID VAR matches 8 as @e[type=phantom, limit=1, tag=Water_Boss] at @s facing entity @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss f100"] eyes run tp @s ^ ^ ^0.5 ~ ~
 
 ## Phase 8)
-# Move phantom towards center of arena
-# execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 8 as @e[type=phantom, limit=1, tag=Water_Boss] at @s facing entity @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss f100"] eyes run tp @s ^ ^ ^0.5 ~ ~
+# Spin phantom on itself
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 8 as @e[type=phantom, limit=1, tag=Water_Boss] at @s run tp @s ~ ~ ~ ~20 ~-0.6
 
 ## Phase 9)

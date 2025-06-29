@@ -42,6 +42,16 @@ scoreboard objectives add WaterBossMaxZpos dummy "Water Boss Maximum Z Position"
 
 scoreboard objectives add WaterBossPhaseID dummy "Water Boss Phase ID"
 
+scoreboard objectives add motion_x1 dummy "Motion X1"
+scoreboard objectives add motion_y1 dummy "Motion Y1"
+scoreboard objectives add motion_z1 dummy "Motion Z1"
+
+scoreboard objectives add motion_x2 dummy "Motion X2"
+scoreboard objectives add motion_y2 dummy "Motion Y2"
+scoreboard objectives add motion_z2 dummy "Motion Z2"
+
+scoreboard objectives add EntityCount dummy "Entity Count"
+
 ## Values ##
 
 # Constant values
@@ -54,6 +64,9 @@ scoreboard players set 36000 CONST 36000
 # Rotational speeds
 scoreboard players set $leftTurnSpeed turningSpeed 750
 scoreboard players set $rightTurnSpeed turningSpeed 750
+
+# Maximal number of projectiles shot
+scoreboard players set MaxProjectiles EntityCount 10
 
 # Initial positions #
 execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] run scoreboard players set @s WaterBossXpos -6150

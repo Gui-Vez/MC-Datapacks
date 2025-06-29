@@ -15,6 +15,6 @@ tag @a remove WB_Marked
 function water_boss:scripts/code/data/set_waypoints_dive with storage main dist.macro
 
 schedule function water_boss:scripts/code/entities/move_by_commands 1t
-schedule function water_boss:scripts/code/entities/manage_waypoints 2t
+schedule function water_boss:scripts/code/functions/manage_waypoints 2t
 
 scoreboard players set $WaypointID VAR 5

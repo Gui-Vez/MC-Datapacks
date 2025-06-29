@@ -28,6 +28,6 @@ schedule function water_boss:scripts/code/data/set_pivots_positions 1t
 schedule function water_boss:scripts/code/data/set_pivots_rotations 1t
 schedule function water_boss:scripts/code/entities/move_by_commands 1t
 schedule function water_boss:scripts/code/scores/detect_walls 1t
-schedule function water_boss:scripts/code/entities/toggle_rotation 1t
-schedule function water_boss:scripts/code/entities/toggle_translation 1t
+schedule function water_boss:scripts/code/misc/toggle_rotation 1t
+schedule function water_boss:scripts/code/misc/toggle_translation 1t
 schedule function water_boss:scripts/code/scores/abs_value 1t

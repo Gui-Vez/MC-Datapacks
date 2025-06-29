@@ -1,4 +1,8 @@
+## Target the platform or player that the boss will land on | Repeat ##
 
+########
+# TAGS #
+########
 
 tag @e remove WB_Targeted
 
