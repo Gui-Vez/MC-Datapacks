@@ -31,3 +31,4 @@ schedule function water_boss:scripts/code/scores/detect_walls 1t
 schedule function water_boss:scripts/code/misc/toggle_rotation 1t
 schedule function water_boss:scripts/code/misc/toggle_translation 1t
 schedule function water_boss:scripts/code/scores/abs_value 1t
+schedule function water_boss:scripts/code/entities/remove_projectiles 1t

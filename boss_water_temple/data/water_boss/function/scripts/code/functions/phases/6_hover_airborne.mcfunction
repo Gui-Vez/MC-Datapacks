@@ -12,5 +12,6 @@
 function water_boss:scripts/code/entities/move_by_commands
 
 schedule function water_boss:scripts/code/misc/target_platform 15t
+schedule function water_boss:scripts/code/functions/prepare_projectiles 1t
 
 scoreboard players set $AttackID VAR 0

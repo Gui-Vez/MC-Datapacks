@@ -10,7 +10,7 @@
 execute unless entity @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] run function water_boss:scripts/code/entities/load_entities
 
 function water_boss:scripts/code/scores/run_scores
-function water_boss:scripts/code/misc/remove_tags
+function water_boss:scripts/code/misc/remove_tags_all
 function water_boss:scripts/code/data/set_pivots_positions
 function water_boss:scripts/code/data/set_pivots_rotations
 
