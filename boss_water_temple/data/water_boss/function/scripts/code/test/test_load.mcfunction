@@ -15,14 +15,18 @@ fill -87 4 9 -37 4 -41 minecraft:water[level=0] replace minecraft:cyan_stained_g
 # fill -87 3 9 -37 -8 -41 air replace water
 # fill -87 0 9 -37 -11 -41 air replace water
 
+# tellraw @a [{"text": "_____________________________"}]
 
 # Boss phases
-scoreboard players get @e[type=minecraft:armor_stand, name="Water Boss Init", limit=1] WaterBossPhaseID
-scoreboard players get $PhaseTimerLimit VAR
+# scoreboard players get @e[type=minecraft:armor_stand, name="Water Boss Init", limit=1] WaterBossPhaseID
+# scoreboard players get $PhaseTimerLimit VAR
 
-# Micro and macro points
-data get storage main dist.macro
+# tellraw @a [{"text": "-----------------------------"}]
 
+# Macro distance points
+# data get storage main dist.macro
+
+# tellraw @a [{"text": "-----------------------------"}]
 
 ## Armor stands position debug ##
 # execute as @e[scores={WaterBossXpos=..2147483647}   ] run tellraw @a [{"bold":true,"text":"[WaterBossXpos]"   },{"text":" "},{"bold":false,"selector":"@s"}," : ",{"bold":false,"score":{"name":"@s","objective":"WaterBossXpos"}}]
@@ -51,3 +55,5 @@ data get storage main dist.macro
 # execute as @e[scores={WaterBossOutXrad=..2147483647}] run tellraw @a [{"bold":true,"text":"[WaterBossOutXrad]"},{"text":" "},{"bold":false,"selector":"@s"}," : ",{"bold":false,"score":{"name":"@s","objective":"WaterBossOutXrad"}}]
 # execute as @e[scores={WaterBossOutYrad=..2147483647}] run tellraw @a [{"bold":true,"text":"[WaterBossOutYrad]"},{"text":" "},{"bold":false,"selector":"@s"}," : ",{"bold":false,"score":{"name":"@s","objective":"WaterBossOutYrad"}}]
 # execute as @e[scores={WaterBossOutZrad=..2147483647}] run tellraw @a [{"bold":true,"text":"[WaterBossOutZrad]"},{"text":" "},{"bold":false,"selector":"@s"}," : ",{"bold":false,"score":{"name":"@s","objective":"WaterBossOutZrad"}}]
+
+# tellraw @a [{"text": "_____________________________"}]

@@ -1,1 +1,0 @@
-summon armor_stand ~ ~ ~ {CustomNameVisible:1b,Invulnerable:1b,Tags:["test"],CustomName:'"turn test"'}
