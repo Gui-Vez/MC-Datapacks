@@ -1,3 +1,3 @@
 {
-	"values": ["water_boss:load", "water_boss:reload", "water_boss:scripts/code/test/sonic_boom/load"]
+	"values": ["water_boss:load", "water_boss:reload", "water_boss:code/test/sonic_boom/load"]
 }

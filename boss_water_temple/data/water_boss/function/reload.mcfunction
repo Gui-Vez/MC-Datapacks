@@ -20,15 +20,15 @@
 ### This mcfunction will be loaded only once per reload. ###
 
 # Clear running effects, functions and scores
-function water_boss:scripts/code/misc/clear_effects
-function water_boss:scripts/code/functions/clear_functions
-function water_boss:scripts/code/scores/clear_scores
+function water_boss:code/entities/effects/clear_effects_all
+function water_boss:code/functions/main/clear_functions
+function water_boss:code/scores/main/clear_scores
 
 # Remove pre-existing entities
-function water_boss:scripts/code/entities/unload_entities
+function water_boss:code/entities/kill/unload_entities
 
 # Remove pre-existing tags
-function water_boss:scripts/code/misc/remove_tags_all
+function water_boss:code/entities/tags/remove_tags_all
 
 # Reset the init variables of the Datapack
 scoreboard players set $init delay_ticks 0

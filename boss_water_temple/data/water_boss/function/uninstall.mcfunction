@@ -20,19 +20,19 @@
 ### This mcfunction will be loaded when uninstalling the datapack. ###
 
 # Clear running functions
-function water_boss:scripts/code/functions/clear_functions
+function water_boss:code/functions/main/clear_functions
 
 # Clear existing scores
-function water_boss:scripts/code/scores/clear_scores
+function water_boss:code/scores/main/clear_scores
 
 # Clear existing effects
-function water_boss:scripts/code/misc/clear_effects
+function water_boss:code/entities/effects/clear_effects_all
 
 # Unload entities
-function water_boss:scripts/code/entities/unload_entities
+function water_boss:code/entities/kill/unload_entities
 
 # Remove tags
-function water_boss:scripts/code/misc/remove_tags_all
+function water_boss:code/entities/tags/remove_tags_all
 
 # Remove the init scoreboards
 scoreboard objectives remove init_boolean
