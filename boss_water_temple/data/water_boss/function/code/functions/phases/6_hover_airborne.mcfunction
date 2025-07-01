@@ -9,7 +9,7 @@
 # FUNCTIONS #
 #############
 
-function water_boss:code/entities/tp/move_by_commands
+function water_boss:code/entities/teleport/move_by_commands
 
 schedule function water_boss:code/entities/tags/target_platform 15t
 schedule function water_boss:code/functions/attacks/aim_projectiles 1t

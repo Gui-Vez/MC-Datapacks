@@ -1,7 +1,7 @@
 ## Initialize armor stand position and rotation values | Once ##
 
 ############
-# ENTITIES #
+# TELEPORT #
 ############
 
 # (Note : Change coordinates to the middle of the Boss room)

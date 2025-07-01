@@ -6,7 +6,7 @@
 
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 6 as @e[type=phantom, limit=1, tag=Water_Boss] at @s anchored eyes positioned ^ ^2 ^2 run function water_boss:code/entities/summon/shoot_needle
 
-execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 7 as @e[type=phantom, limit=1, tag=Water_Boss] at @s anchored eyes positioned ^ ^0.5 ^0.5 facing entity @p[tag=WB_Marked] eyes run function water_boss:code/entities/summon/shoot_needle
+execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 7 as @e[type=phantom, limit=1, tag=Water_Boss] at @s anchored eyes positioned ^ ^-1 ^2 run function water_boss:code/entities/summon/shoot_needle
 
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 8 as @e[type=phantom, limit=1, tag=Water_Boss] at @s anchored eyes positioned ^ ^2 ^2 run function water_boss:code/entities/summon/shoot_needle
 

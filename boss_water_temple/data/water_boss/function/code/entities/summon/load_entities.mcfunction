@@ -1,8 +1,8 @@
 ## Summons entities | Once ##
 
-############
-# ENTITIES #
-############
+##########
+# SUMMON #
+##########
 
 summon armor_stand 0 0 0 {NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Marker:1b,Tags:["Water_Boss","Pivot"],CustomName:'"Water Boss Init"'}
 summon armor_stand 0 0 0 {NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Marker:1b,Tags:["Water_Boss","Pivot"],CustomName:'"Water Boss Center"'}

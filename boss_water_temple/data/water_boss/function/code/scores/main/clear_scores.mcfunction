@@ -51,3 +51,7 @@ scoreboard objectives remove motion_y2
 scoreboard objectives remove motion_z2
 
 scoreboard objectives remove EntityCount
+
+scoreboard objectives remove RiptideUse
+scoreboard objectives remove RiptideTimer
+scoreboard objectives remove RiptideTimerLimit

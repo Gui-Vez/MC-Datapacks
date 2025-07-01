@@ -10,11 +10,11 @@
 # FUNCTIONS #
 #############
 
-function water_boss:code/data/set/set_waypoints_jump with storage main dist.macro
+function water_boss:code/storage/set/set_waypoints_jump with storage main dist.macro
 
-function water_boss:code/entities/tp/place_waypoints
+function water_boss:code/entities/teleport/place_waypoints
 function water_boss:code/functions/attacks/manage_waypoints
 
-schedule function water_boss:code/entities/tp/move_by_commands 1t
+schedule function water_boss:code/entities/teleport/move_by_commands 1t
 
 scoreboard players set $WaypointID VAR 0

@@ -1,8 +1,8 @@
 ## Reset rotations of pivoting armor stands according to phantom's | Once ##
 
-########
-# DATA #
-########
+###########
+# STORAGE #
+###########
 
 ## Get the rotation of the phantom and store it in scores ##
 # Column #

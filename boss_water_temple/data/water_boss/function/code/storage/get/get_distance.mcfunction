@@ -1,8 +1,8 @@
 ## Obtain the distance between two points in the arena | Once ##
 
-########
-# DATA #
-########
+###########
+# STORAGE #
+###########
 
 # Store endpoint positions of armor stands into micros
 data modify storage main dist.pos1 set from entity @e[type=armor_stand, tag=Water_Boss, name="Water Boss f000", limit=1] Pos

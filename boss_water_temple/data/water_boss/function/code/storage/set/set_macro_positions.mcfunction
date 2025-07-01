@@ -1,8 +1,8 @@
 ## Convert scores into macro position values | Once ##
 
-########
-# DATA #
-########
+###########
+# STORAGE #
+###########
 
 # Store waypoints in storage as float
 execute store result storage main f000.macro.x double 0.001 run scoreboard players get f000.X VAR

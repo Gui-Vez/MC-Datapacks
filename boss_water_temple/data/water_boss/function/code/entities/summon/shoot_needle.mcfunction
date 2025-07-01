@@ -1,8 +1,8 @@
 ## Throw projectiles from position of entity | Repeat ##
 
-############
-# ENTITIES #
-############
+##########
+# SUMMON #
+##########
 
 summon minecraft:arrow ^ ^ ^0.8 {Tags:["motion_projectile"]}
 # summon minecraft:fireball ^ ^ ^0.8 {Tags:["motion_projectile"],ExplosionPower:0}

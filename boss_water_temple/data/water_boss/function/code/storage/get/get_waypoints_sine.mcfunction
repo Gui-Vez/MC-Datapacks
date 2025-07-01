@@ -1,8 +1,8 @@
 ## Obtain the waypoints in which the phantom must follow (scale offsetted by sine values) | Once ##
 
-########
-# DATA #
-########
+###########
+# STORAGE #
+###########
 
 # Load delta values from macro storage
 execute store result score delta_f025.Y VAR run data get storage main dist.macro.y 0383

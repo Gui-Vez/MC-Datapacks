@@ -1,8 +1,8 @@
 ## Obtain the waypoints in which the phantom must follow (regular expressions) | Once ##
 
-########
-# DATA #
-########
+###########
+# STORAGE #
+###########
 
 # Load delta values from macro storage
 execute store result score delta_f000.X VAR run data get storage main dist.macro.x 0000

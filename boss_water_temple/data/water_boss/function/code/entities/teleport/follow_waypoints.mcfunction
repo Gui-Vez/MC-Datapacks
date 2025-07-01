@@ -1,7 +1,7 @@
 ## Teleport waypoints to start / end phantom's attack | Repeat ##
 
 ############
-# ENTITIES #
+# TELEPORT #
 ############
 
 # Teleport phantom to the next waypoint based on the current waypoint ID

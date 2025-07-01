@@ -11,3 +11,5 @@ tag @e[tag=Water_Boss] remove WB_Targeted
 tag @a remove WB_Targeted
 
 tag @a remove WB_Marked
+
+tag @a remove WB_Protected

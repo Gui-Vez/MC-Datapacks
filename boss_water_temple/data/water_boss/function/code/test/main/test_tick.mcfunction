@@ -13,6 +13,11 @@
 
 # tellraw @a [{"text": "-----------------------------"}]
 
+# execute if entity @a[tag=WB_Protected] run say true
+# execute unless entity @a[tag=WB_Protected] run say false
+
+# tellraw @a [{"text": "-----------------------------"}]
+
 # execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Row", y_rotation=-90..90] run say South
 # execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Row", y_rotation=90..-90] run say North
 

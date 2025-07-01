@@ -11,9 +11,9 @@ scoreboard players set $AttackTimer VAR 0
 
 function water_boss:code/entities/tags/remove_tags_attack
 
-function water_boss:code/data/set/set_waypoints_dive with storage main dist.macro
+function water_boss:code/storage/set/set_waypoints_dive with storage main dist.macro
 
-schedule function water_boss:code/entities/tp/move_by_commands 1t
+schedule function water_boss:code/entities/teleport/move_by_commands 1t
 
 schedule function water_boss:code/functions/attacks/aim_projectiles 1t
 schedule function water_boss:code/functions/attacks/manage_waypoints 2t

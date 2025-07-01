@@ -1,8 +1,8 @@
 ## Creates all scores | Once ##
 
-###############
-# SCOREBOARDS #
-###############
+##########
+# SCORES #
+##########
 
 ## Objectives ##
 scoreboard objectives add VAR dummy "Variable Value"
@@ -52,6 +52,10 @@ scoreboard objectives add motion_z2 dummy "Motion Z2"
 
 scoreboard objectives add EntityCount dummy "Entity Count"
 
+scoreboard objectives add RiptideUse minecraft.used:minecraft.trident "Riptide Use"
+scoreboard objectives add RiptideTimer dummy "Riptide Timer"
+scoreboard objectives add RiptideTimerLimit dummy "Riptide Timer Limit"
+
 ## Values ##
 
 # Constant values
@@ -67,6 +71,10 @@ scoreboard players set $rightTurnSpeed turningSpeed 750
 
 # Maximal number of projectiles shot
 scoreboard players set MaxProjectiles EntityCount 10
+
+# Timer values for the invulnerability frames of the trident
+scoreboard players set @a RiptideTimer 0
+scoreboard players set RiptideTimerLimit VAR 50
 
 # Initial positions #
 execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] run scoreboard players set @s WaterBossXpos -6150

@@ -1,8 +1,8 @@
 ## Get motion of projectile | Once ##
 
-########
-# DATA #
-########
+###########
+# STORAGE #
+###########
 
 execute store result score @s motion_x1 run data get entity @s Pos[0] 1000
 execute store result score @s motion_y1 run data get entity @s Pos[1] 1000
