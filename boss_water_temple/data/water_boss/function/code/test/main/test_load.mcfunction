@@ -9,13 +9,16 @@ say Load
 
 
 # (Remove these lines at launch) #
+
+# tellraw @a [{"text": "_____________________________"}]
+
 # fill -87 4 9 -37 4 -41 minecraft:water[level=0] replace minecraft:cyan_stained_glass
 
 # fill -87 4 9 -37 4 -41 minecraft:cyan_stained_glass replace minecraft:water[level=0]
 # fill -87 3 9 -37 -8 -41 air replace water
 # fill -87 0 9 -37 -11 -41 air replace water
 
-# tellraw @a [{"text": "_____________________________"}]
+# tellraw @a [{"text": "-----------------------------"}]
 
 # Boss phases
 # scoreboard players get @e[type=minecraft:armor_stand, name="Water Boss Init", limit=1] WaterBossPhaseID
@@ -25,6 +28,12 @@ say Load
 
 # Macro distance points
 # data get storage main dist.macro
+
+# tellraw @a [{"text": "-----------------------------"}]
+
+# Boss HP
+# scoreboard players get @e[type=phantom, limit=1, tag=Water_Boss] WaterBossHP
+# data get entity @e[type=phantom, limit=1, tag=Water_Boss] Health
 
 # tellraw @a [{"text": "-----------------------------"}]
 

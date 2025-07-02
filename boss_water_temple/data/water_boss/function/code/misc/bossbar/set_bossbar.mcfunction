@@ -1,11 +1,7 @@
-## Sets the boss HP bar | Once ##
+## Sets the boss HP bar | Repeat ##
 
 ###########
 # BOSSBAR #
 ###########
 
-bossbar add minecraft:water_boss "Water Boss"
-bossbar set minecraft:water_boss color blue
-bossbar set minecraft:water_boss style notched_6
-bossbar set minecraft:water_boss players @a
-bossbar set minecraft:water_boss max 100
+execute as @e[type=phantom, limit=1, tag=Water_Boss] at @s store result bossbar minecraft:water_boss value run data get entity @s Health

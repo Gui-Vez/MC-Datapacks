@@ -8,4 +8,4 @@
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches ..-1 run scoreboard players set @s WaterBossPhaseID 0
 
 # If PhaseID > Max Phase = Set to 3
-execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 11.. run scoreboard players set @s WaterBossPhaseID 3
+execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 12.. run scoreboard players set @s WaterBossPhaseID 3

@@ -9,8 +9,6 @@ scoreboard objectives remove VAR
 scoreboard objectives remove CONST
 scoreboard objectives remove turningSpeed
 
-scoreboard objectives remove WaterBossPhaseID
-
 scoreboard objectives remove WaterBossXpos
 scoreboard objectives remove WaterBossYpos
 scoreboard objectives remove WaterBossZpos
@@ -41,6 +39,10 @@ scoreboard objectives remove WaterBossMinZpos
 scoreboard objectives remove WaterBossMaxXpos
 scoreboard objectives remove WaterBossMaxYpos
 scoreboard objectives remove WaterBossMaxZpos
+
+scoreboard objectives remove WaterBossPhaseID
+
+scoreboard objectives remove WaterBossHP
 
 scoreboard objectives remove motion_x1
 scoreboard objectives remove motion_y1

@@ -42,6 +42,8 @@ scoreboard objectives add WaterBossMaxZpos dummy "Water Boss Maximum Z Position"
 
 scoreboard objectives add WaterBossPhaseID dummy "Water Boss Phase ID"
 
+scoreboard objectives add WaterBossHP dummy "Water Boss Health Points"
+
 scoreboard objectives add motion_x1 dummy "Motion X1"
 scoreboard objectives add motion_y1 dummy "Motion Y1"
 scoreboard objectives add motion_z1 dummy "Motion Z1"
@@ -75,6 +77,9 @@ scoreboard players set MaxProjectiles EntityCount 10
 # Timer values for the invulnerability frames of the trident
 scoreboard players set @a RiptideTimer 0
 scoreboard players set RiptideTimerLimit VAR 50
+
+# Initial Boss HP
+execute as @e[type=phantom, limit=1, tag=Water_Boss] run scoreboard players set @s WaterBossHP 100
 
 # Initial positions #
 execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] run scoreboard players set @s WaterBossXpos -6150

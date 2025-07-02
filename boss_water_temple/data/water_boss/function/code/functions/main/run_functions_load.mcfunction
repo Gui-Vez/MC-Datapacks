@@ -8,7 +8,8 @@
 # function water_boss:scripts/code/test/test_load
 
 # Summon the entities
-execute unless entity @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] run function water_boss:code/entities/summon/load_entities
+execute unless entity @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] run function water_boss:code/entities/summon/load_phantom
+execute unless entity @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] run function water_boss:code/entities/summon/load_armor_stands
 
 # Run the functions at launch
 function water_boss:code/scores/main/run_scores

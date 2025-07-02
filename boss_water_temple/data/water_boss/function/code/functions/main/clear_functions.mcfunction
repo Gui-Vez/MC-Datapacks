@@ -1,4 +1,4 @@
-## Stops functions | Once ##
+## Stops main functions | Once ##
 
 #############
 # FUNCTIONS #
