@@ -1,1 +1,0 @@
-execute as @e[type=arrow,tag=!sb.finished] run function water_boss:scripts/code/test/sonic_boom/arrow_tick

@@ -20,10 +20,10 @@
 ### This mcfunction will be loaded 20 in-game ticks per second. ###
 
 # Call the init load function only if it hasn't been called before
-execute if score $init init_boolean matches 1 unless score $load init_boolean matches 1 run function water_boss:scripts/run_functions_load
+execute if score $init init_boolean matches 1 unless score $load init_boolean matches 1 run function water_boss:code/functions/main/run_functions_load
 
 # Call the init tick function on repeat if it has been initialized
-execute if score $init init_boolean matches 1 run function water_boss:scripts/run_functions_tick
+execute if score $init init_boolean matches 1 run function water_boss:code/functions/main/run_functions_tick
 
 # If the time has passed after a certain delay, the function will initialize
 execute if score $init delay_ticks matches 20.. run scoreboard players set $init init_boolean 1
