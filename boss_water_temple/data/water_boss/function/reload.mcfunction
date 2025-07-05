@@ -20,10 +20,10 @@
 ### This mcfunction will be loaded only once per reload. ###
 
 # Clear running functions
-function water_boss:code/functions/main/clear_fight
+function water_boss:code/functions/end/clear_fight
 
 # Reset obtained rewards
-function water_boss:code/functions/main/reset_rewards
+function water_boss:code/functions/end/reset_rewards
 
 # Reset the init variables of the Datapack
 scoreboard players set $init delay_ticks 0

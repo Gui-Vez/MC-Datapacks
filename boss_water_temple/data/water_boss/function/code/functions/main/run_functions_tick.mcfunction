@@ -36,12 +36,15 @@ execute unless score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water B
 execute unless score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 011 run schedule clear water_boss:code/functions/phases/11_end_fight
 
 # If in range #
+execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 0.. run function water_boss:code/scores/count/win_boolean
+
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 0..10 run function water_boss:code/entities/effects/run_effects_all
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 0..10 run function water_boss:code/scores/count/time_contact
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 0..10 run function water_boss:code/scores/count/detect_riptide_use
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 0..10 run function water_boss:code/entities/tags/protect_player
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 0..10 run function water_boss:code/entities/damage/phantom_attack
 
+execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 3..10 run function water_boss:code/scores/count/force_swim
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 3..10 run function water_boss:code/storage/get/get_boss_health
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 3..10 run function water_boss:code/storage/set/set_boss_health
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 3..10 run function water_boss:code/misc/bossbar/set_bossbar

@@ -8,8 +8,5 @@
 #############
 
 function water_boss:code/entities/tags/remove_tags_all
-
-function water_boss:code/entities/tags/tag_winner
-function water_boss:code/misc/advancements/grant_slayer_advancement
-
-function water_boss:code/functions/main/clear_fight
+function water_boss:code/functions/end/reward_players
+function water_boss:code/functions/end/clear_fight

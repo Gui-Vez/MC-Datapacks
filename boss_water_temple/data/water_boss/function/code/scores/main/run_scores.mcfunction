@@ -5,6 +5,8 @@
 ##########
 
 ## Objectives ##
+scoreboard objectives add PermVAR dummy "Permanent Variable"
+
 scoreboard objectives add VAR dummy "Variable Value"
 scoreboard objectives add CONST dummy "Constant Value"
 scoreboard objectives add turningSpeed dummy "Turning Speed"
