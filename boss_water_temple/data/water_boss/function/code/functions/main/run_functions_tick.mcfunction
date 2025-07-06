@@ -19,7 +19,10 @@ execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss 
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 008 run schedule function water_boss:code/functions/phases/8_prepare_dive 1t
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 009 run schedule function water_boss:code/functions/phases/9_dive_back 1t
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 010 run schedule function water_boss:code/functions/phases/10_reset_phases 1t
-execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 011 run schedule function water_boss:code/functions/phases/11_end_fight 1t
+execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 011 run schedule function water_boss:code/functions/phases/11_summon_decoy 1t
+execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 012 run schedule function water_boss:code/functions/phases/12_animate_death 1t
+execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 013 run schedule function water_boss:code/functions/phases/13_reward_player 1t
+execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 014 run schedule function water_boss:code/functions/phases/14_end_fight 1t
 
 # Stop phases #
 execute unless score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 0.. run schedule clear water_boss:code/functions/phases/0_delay_phases
@@ -33,11 +36,12 @@ execute unless score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water B
 execute unless score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 008 run schedule clear water_boss:code/functions/phases/8_prepare_dive
 execute unless score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 009 run schedule clear water_boss:code/functions/phases/9_dive_back
 execute unless score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 010 run schedule clear water_boss:code/functions/phases/10_reset_phases
-execute unless score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 011 run schedule clear water_boss:code/functions/phases/11_end_fight
+execute unless score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 011 run schedule clear water_boss:code/functions/phases/11_summon_decoy
+execute unless score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 012 run schedule clear water_boss:code/functions/phases/12_animate_death
+execute unless score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 013 run schedule clear water_boss:code/functions/phases/13_reward_player
+execute unless score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 014 run schedule clear water_boss:code/functions/phases/14_end_fight
 
 # If in range #
-execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 0.. run function water_boss:code/scores/count/win_boolean
-
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 0..10 run function water_boss:code/entities/effects/run_effects_all
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 0..10 run function water_boss:code/scores/count/time_contact
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 0..10 run function water_boss:code/scores/count/detect_riptide_use
@@ -52,7 +56,7 @@ execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss 
 execute if score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 3..10 run function water_boss:code/scores/count/detect_death
 
 # Unless in range #
-execute unless score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 0..11 run function water_boss:code/scores/count/min_max_phase_id
+execute unless score @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID matches 0..14 run function water_boss:code/scores/count/min_max_phase_id
 
 # Refresh function #
 schedule function water_boss:code/functions/main/run_functions_tick 1t

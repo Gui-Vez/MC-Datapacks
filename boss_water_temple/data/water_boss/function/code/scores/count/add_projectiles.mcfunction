@@ -6,4 +6,4 @@
 
 scoreboard players set TotalProjectiles EntityCount 0
 
-execute as @e[type=arrow, tag=motion_projectile] run scoreboard players add TotalProjectiles EntityCount 1
+execute as @e[type=arrow, tag=WaterBoss_motion_projectile] run scoreboard players add TotalProjectiles EntityCount 1

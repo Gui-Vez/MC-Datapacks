@@ -1,0 +1,12 @@
+## Phase 14 | Once ##
+
+# > Set winning boolean to true
+# > Kill all boss dependant entities
+# > Clear running boss fight functions
+
+#############
+# FUNCTIONS #
+#############
+
+function water_boss:code/scores/count/win_boolean
+function water_boss:code/functions/end/clear_fight

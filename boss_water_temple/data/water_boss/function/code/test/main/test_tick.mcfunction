@@ -13,8 +13,8 @@
 
 # tellraw @a [{"text": "-----------------------------"}]
 
-# execute if entity @a[tag=WB_Protected] run say true
-# execute unless entity @a[tag=WB_Protected] run say false
+# execute if entity @a[tag=WaterBoss_Protected] run say true
+# execute unless entity @a[tag=WaterBoss_Protected] run say false
 
 # tellraw @a [{"text": "-----------------------------"}]
 
