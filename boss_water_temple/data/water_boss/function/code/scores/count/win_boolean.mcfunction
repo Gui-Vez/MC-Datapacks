@@ -4,5 +4,5 @@
 # SCORES #
 ##########
 
-execute if score $WaterBossPhaseID VAR matches 0..10 run scoreboard players set $WaterBossWin PermVAR 0
-execute if score $WaterBossPhaseID VAR matches 11.. run scoreboard players set $WaterBossWin PermVAR 1
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 0..10 run scoreboard players set $WaterBossWin WaterBoss_PermVAR 0
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 11.. run scoreboard players set $WaterBossWin WaterBoss_PermVAR 1

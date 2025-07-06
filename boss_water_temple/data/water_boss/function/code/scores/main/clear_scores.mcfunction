@@ -5,55 +5,54 @@
 ##########
 
 # Clear the scores
-scoreboard objectives remove VAR
-scoreboard objectives remove CONST
-scoreboard objectives remove turningSpeed
+scoreboard objectives remove WaterBoss_VAR
+scoreboard objectives remove WaterBoss_CONST
 
-scoreboard objectives remove WaterBossXpos
-scoreboard objectives remove WaterBossYpos
-scoreboard objectives remove WaterBossZpos
+scoreboard objectives remove WaterBoss_Xpos
+scoreboard objectives remove WaterBoss_Ypos
+scoreboard objectives remove WaterBoss_Zpos
 
-scoreboard objectives remove WaterBossXrot
-scoreboard objectives remove WaterBossYrot
+scoreboard objectives remove WaterBoss_Xrot
+scoreboard objectives remove WaterBoss_Yrot
 
-scoreboard objectives remove WaterBossXdir
-scoreboard objectives remove WaterBossYdir
-scoreboard objectives remove WaterBossZdir
+scoreboard objectives remove WaterBoss_Xdir
+scoreboard objectives remove WaterBoss_Ydir
+scoreboard objectives remove WaterBoss_Zdir
 
-scoreboard objectives remove WaterBossXoffset
-scoreboard objectives remove WaterBossYoffset
-scoreboard objectives remove WaterBossZoffset
+scoreboard objectives remove WaterBoss_Xoffset
+scoreboard objectives remove WaterBoss_Yoffset
+scoreboard objectives remove WaterBoss_Zoffset
 
-scoreboard objectives remove WaterBossInnXrad
-scoreboard objectives remove WaterBossInnYrad
-scoreboard objectives remove WaterBossInnZrad
+scoreboard objectives remove WaterBoss_InnXrad
+scoreboard objectives remove WaterBoss_InnYrad
+scoreboard objectives remove WaterBoss_InnZrad
 
-scoreboard objectives remove WaterBossOutXrad
-scoreboard objectives remove WaterBossOutYrad
-scoreboard objectives remove WaterBossOutZrad
+scoreboard objectives remove WaterBoss_OutXrad
+scoreboard objectives remove WaterBoss_OutYrad
+scoreboard objectives remove WaterBoss_OutZrad
 
-scoreboard objectives remove WaterBossMinXpos
-scoreboard objectives remove WaterBossMinYpos
-scoreboard objectives remove WaterBossMinZpos
+scoreboard objectives remove WaterBoss_MinXpos
+scoreboard objectives remove WaterBoss_MinYpos
+scoreboard objectives remove WaterBoss_MinZpos
 
-scoreboard objectives remove WaterBossMaxXpos
-scoreboard objectives remove WaterBossMaxYpos
-scoreboard objectives remove WaterBossMaxZpos
+scoreboard objectives remove WaterBoss_MaxXpos
+scoreboard objectives remove WaterBoss_MaxYpos
+scoreboard objectives remove WaterBoss_MaxZpos
 
-scoreboard objectives remove WaterBossPhaseID
+scoreboard objectives remove WaterBoss_PhaseID
+scoreboard objectives remove WaterBoss_HP
 
-scoreboard objectives remove WaterBossHP
+scoreboard objectives remove WaterBoss_TurningSpeed
+scoreboard objectives remove WaterBoss_EntityCount
 
-scoreboard objectives remove motion_x1
-scoreboard objectives remove motion_y1
-scoreboard objectives remove motion_z1
+scoreboard objectives remove WaterBoss_Motion_X1
+scoreboard objectives remove WaterBoss_Motion_Y1
+scoreboard objectives remove WaterBoss_Motion_Z1
 
-scoreboard objectives remove motion_x2
-scoreboard objectives remove motion_y2
-scoreboard objectives remove motion_z2
+scoreboard objectives remove WaterBoss_Motion_X2
+scoreboard objectives remove WaterBoss_Motion_Y2
+scoreboard objectives remove WaterBoss_Motion_Z2
 
-scoreboard objectives remove EntityCount
-
-scoreboard objectives remove RiptideUse
-scoreboard objectives remove RiptideTimer
-scoreboard objectives remove RiptideTimerLimit
+scoreboard objectives remove WaterBoss_RiptideUse
+scoreboard objectives remove WaterBoss_RiptideTimer
+scoreboard objectives remove WaterBoss_RiptideTimerLimit

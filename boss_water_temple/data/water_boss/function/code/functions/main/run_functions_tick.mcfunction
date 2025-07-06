@@ -8,38 +8,38 @@
 execute if score $init delay_ticks matches 20.. run schedule function water_boss:code/test/main/test_tick 1t
 
 # Run phases #
-execute if score $WaterBossPhaseID VAR matches 0.. run function water_boss:code/functions/phases/0_delay_phases
-execute if score $WaterBossPhaseID VAR matches 001 run function water_boss:code/functions/phases/1_detect_player_start
-execute if score $WaterBossPhaseID VAR matches 002 run function water_boss:code/functions/phases/2_init_fight
-execute if score $WaterBossPhaseID VAR matches 003 run function water_boss:code/functions/phases/3_swim_idle
-execute if score $WaterBossPhaseID VAR matches 004 run function water_boss:code/functions/phases/4_prepare_jump
-execute if score $WaterBossPhaseID VAR matches 005 run function water_boss:code/functions/phases/5_emerge_water
-execute if score $WaterBossPhaseID VAR matches 006 run function water_boss:code/functions/phases/6_hover_airborne
-execute if score $WaterBossPhaseID VAR matches 007 run function water_boss:code/functions/phases/7_attack_player
-execute if score $WaterBossPhaseID VAR matches 008 run function water_boss:code/functions/phases/8_prepare_dive
-execute if score $WaterBossPhaseID VAR matches 009 run function water_boss:code/functions/phases/9_dive_back
-execute if score $WaterBossPhaseID VAR matches 010 run function water_boss:code/functions/phases/10_reset_phases
-execute if score $WaterBossPhaseID VAR matches 011 run function water_boss:code/functions/phases/11_summon_decoy
-execute if score $WaterBossPhaseID VAR matches 012 run function water_boss:code/functions/phases/12_animate_death
-execute if score $WaterBossPhaseID VAR matches 013 run function water_boss:code/functions/phases/13_reward_player
-execute if score $WaterBossPhaseID VAR matches 014 run function water_boss:code/functions/phases/14_end_fight
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 0.. run function water_boss:code/functions/phases/0_delay_phases
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 001 run function water_boss:code/functions/phases/1_detect_player_start
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 002 run function water_boss:code/functions/phases/2_init_fight
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 003 run function water_boss:code/functions/phases/3_swim_idle
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 004 run function water_boss:code/functions/phases/4_prepare_jump
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 005 run function water_boss:code/functions/phases/5_emerge_water
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 006 run function water_boss:code/functions/phases/6_hover_airborne
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 007 run function water_boss:code/functions/phases/7_attack_player
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 008 run function water_boss:code/functions/phases/8_prepare_dive
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 009 run function water_boss:code/functions/phases/9_dive_back
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 010 run function water_boss:code/functions/phases/10_reset_phases
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 011 run function water_boss:code/functions/phases/11_summon_decoy
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 012 run function water_boss:code/functions/phases/12_animate_death
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 013 run function water_boss:code/functions/phases/13_reward_player
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 014 run function water_boss:code/functions/phases/14_end_fight
 
 # If in range #
-execute if score $WaterBossPhaseID VAR matches 0..10 run function water_boss:code/entities/effects/run_effects_all
-execute if score $WaterBossPhaseID VAR matches 0..10 run function water_boss:code/scores/count/time_contact
-execute if score $WaterBossPhaseID VAR matches 0..10 run function water_boss:code/scores/count/detect_riptide_use
-execute if score $WaterBossPhaseID VAR matches 0..10 run function water_boss:code/entities/tags/protect_player
-execute if score $WaterBossPhaseID VAR matches 0..10 run function water_boss:code/entities/damage/phantom_attack
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 0..10 run function water_boss:code/entities/effects/run_effects_all
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 0..10 run function water_boss:code/scores/count/time_contact
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 0..10 run function water_boss:code/scores/count/detect_riptide_use
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 0..10 run function water_boss:code/entities/tags/protect_player
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 0..10 run function water_boss:code/entities/damage/phantom_attack
 
-execute if score $WaterBossPhaseID VAR matches 3..10 run function water_boss:code/scores/count/force_swim
-execute if score $WaterBossPhaseID VAR matches 3..10 run function water_boss:code/storage/get/get_boss_health
-execute if score $WaterBossPhaseID VAR matches 3..10 run function water_boss:code/storage/set/set_boss_health
-execute if score $WaterBossPhaseID VAR matches 3..10 run function water_boss:code/misc/bossbar/set_bossbar
-execute if score $WaterBossPhaseID VAR matches 3..10 run function water_boss:code/misc/bossbar/show_bossbar
-execute if score $WaterBossPhaseID VAR matches 3..10 run function water_boss:code/scores/count/detect_death
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 3..10 run function water_boss:code/scores/count/force_swim
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 3..10 run function water_boss:code/storage/get/get_boss_health
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 3..10 run function water_boss:code/storage/set/set_boss_health
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 3..10 run function water_boss:code/misc/bossbar/set_bossbar
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 3..10 run function water_boss:code/misc/bossbar/show_bossbar
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 3..10 run function water_boss:code/scores/count/detect_death
 
 # Unless in range #
-execute unless score $WaterBossPhaseID VAR matches 0..14 run function water_boss:code/scores/count/min_max_phase_id
+execute unless score $WaterBoss_PhaseID WaterBoss_VAR matches 0..14 run function water_boss:code/scores/count/min_max_phase_id
 
 # Refresh function #
 schedule function water_boss:code/functions/main/run_functions_tick 1t

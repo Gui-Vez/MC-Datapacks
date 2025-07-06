@@ -11,4 +11,4 @@
 function water_boss:code/entities/tags/remove_tags_all
 function water_boss:code/functions/end/reward_players
 
-scoreboard players set $WaterBossPhaseID VAR 14
+scoreboard players set $WaterBoss_PhaseID WaterBoss_VAR 14

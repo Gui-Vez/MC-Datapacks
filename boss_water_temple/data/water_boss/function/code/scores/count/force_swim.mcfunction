@@ -4,5 +4,5 @@
 # SCORES #
 ##########
 
-execute as @e[type=minecraft:marker, limit=1, name="Water Boss Init", tag=Water_Boss] at @s at @s positioned ~-25 ~-20 ~-25 unless entity @a[gamemode=!spectator, dx=50, dy=75, dz=50] run scoreboard players set $WaterBossPhaseID VAR 3
-execute as @e[type=minecraft:marker, limit=1, name="Water Boss Init", tag=Water_Boss] at @s positioned ~-25 ~-20 ~-25 unless entity @a[gamemode=!spectator, dx=50, dy=75, dz=50] run scoreboard players set $PhaseTimer VAR 0
+execute as @e[type=minecraft:marker, limit=1, name="Water Boss Init", tag=Water_Boss] at @s at @s positioned ~-25 ~-20 ~-25 unless entity @a[gamemode=!spectator, dx=50, dy=75, dz=50] run scoreboard players set $WaterBoss_PhaseID WaterBoss_VAR 3
+execute as @e[type=minecraft:marker, limit=1, name="Water Boss Init", tag=Water_Boss] at @s positioned ~-25 ~-20 ~-25 unless entity @a[gamemode=!spectator, dx=50, dy=75, dz=50] run scoreboard players set $PhaseTimer WaterBoss_VAR 0

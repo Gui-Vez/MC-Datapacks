@@ -10,4 +10,4 @@
 # FUNCTIONS #
 #############
 
-scoreboard players set $WaterBossPhaseID VAR 12
+scoreboard players set $WaterBoss_PhaseID WaterBoss_VAR 12

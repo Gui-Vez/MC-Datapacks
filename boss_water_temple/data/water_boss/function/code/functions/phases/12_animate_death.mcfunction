@@ -16,4 +16,4 @@
 # Aim needle towards player
 # execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Init"] at @s facing entity @p[gamemode=!spectator] eyes run tp @e[type=firework_rocket, tag=Needle] ^ ^ ^0.25
 
-scoreboard players set $WaterBossPhaseID VAR 13
+scoreboard players set $WaterBoss_PhaseID WaterBoss_VAR 13

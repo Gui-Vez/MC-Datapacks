@@ -21,7 +21,7 @@ function water_boss:code/storage/set/set_pivots_rotations
 function water_boss:code/scores/count/reset_timers
 
 # Set the Phase ID of the Water Boss to 0
-scoreboard players set $WaterBossPhaseID VAR 0
+scoreboard players set $WaterBoss_PhaseID WaterBoss_VAR 0
 
 # Set the initialization boolean to 'true'
 scoreboard players set $load init_boolean 1

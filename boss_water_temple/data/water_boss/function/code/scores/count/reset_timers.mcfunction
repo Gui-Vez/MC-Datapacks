@@ -5,11 +5,11 @@
 ##########
 
 # Reset phases variables
-scoreboard players set $NewPhase VAR 0
-scoreboard players set $PhaseTimer VAR 0
-scoreboard players set $PhaseTimerLimit VAR 0
+scoreboard players set $NewPhase WaterBoss_VAR 0
+scoreboard players set $PhaseTimer WaterBoss_VAR 0
+scoreboard players set $PhaseTimerLimit WaterBoss_VAR 0
 
 # Reset attacks variables
-scoreboard players set $NewAttack VAR 0
-scoreboard players set $AttackTimer VAR 0
-scoreboard players set $AttackTimerLimit VAR 0
+scoreboard players set $NewAttack WaterBoss_VAR 0
+scoreboard players set $AttackTimer WaterBoss_VAR 0
+scoreboard players set $AttackTimerLimit WaterBoss_VAR 0

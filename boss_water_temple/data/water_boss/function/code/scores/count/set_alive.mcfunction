@@ -4,5 +4,5 @@
 # SCORES #
 ##########
 
-execute unless score $WaterBossPhaseID VAR matches 0..10 run scoreboard players set WaterBossIsAlive VAR 0
-execute if score $WaterBossPhaseID VAR matches 0..10 run scoreboard players set WaterBossIsAlive VAR 1
+execute unless score $WaterBoss_PhaseID WaterBoss_VAR matches 0..10 run scoreboard players set WaterBossIsAlive WaterBoss_VAR 0
+execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 0..10 run scoreboard players set WaterBossIsAlive WaterBoss_VAR 1

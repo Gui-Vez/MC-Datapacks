@@ -4,15 +4,15 @@
 # SCORES #
 ##########
 
-scoreboard players operation $YrotLoffsetNeg WaterBossYrot = 00000 CONST
-scoreboard players operation $YrotLoffsetNeg WaterBossYrot -= $leftTurnSpeed turningSpeed
+scoreboard players operation $YrotLoffsetNeg WaterBoss_Yrot = 00000 WaterBoss_CONST
+scoreboard players operation $YrotLoffsetNeg WaterBoss_Yrot -= $leftTurnSpeed WaterBoss_TurningSpeed
 
-scoreboard players operation $YrotLoffsetPos WaterBossYrot = 00000 CONST
-scoreboard players operation $YrotLoffsetPos WaterBossYrot += $leftTurnSpeed turningSpeed
+scoreboard players operation $YrotLoffsetPos WaterBoss_Yrot = 00000 WaterBoss_CONST
+scoreboard players operation $YrotLoffsetPos WaterBoss_Yrot += $leftTurnSpeed WaterBoss_TurningSpeed
 
 
-scoreboard players operation $YrotRoffsetNeg WaterBossYrot = 18000 CONST
-scoreboard players operation $YrotRoffsetNeg WaterBossYrot -= $rightTurnSpeed turningSpeed
+scoreboard players operation $YrotRoffsetNeg WaterBoss_Yrot = 18000 WaterBoss_CONST
+scoreboard players operation $YrotRoffsetNeg WaterBoss_Yrot -= $rightTurnSpeed WaterBoss_TurningSpeed
 
-scoreboard players operation $YrotRoffsetPos WaterBossYrot = 18000 CONST
-scoreboard players operation $YrotRoffsetPos WaterBossYrot += $rightTurnSpeed turningSpeed
+scoreboard players operation $YrotRoffsetPos WaterBoss_Yrot = 18000 WaterBoss_CONST
+scoreboard players operation $YrotRoffsetPos WaterBoss_Yrot += $rightTurnSpeed WaterBoss_TurningSpeed

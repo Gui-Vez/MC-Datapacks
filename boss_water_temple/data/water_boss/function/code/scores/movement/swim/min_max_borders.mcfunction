@@ -5,19 +5,19 @@
 ##########
 
 # Minimum positions #
-execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players operation @s WaterBossMinXpos = @s WaterBossXpos
-execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players operation @s WaterBossMinYpos = @s WaterBossYpos
-execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players operation @s WaterBossMinZpos = @s WaterBossZpos
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players operation @s WaterBoss_MinXpos = @s WaterBoss_Xpos
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players operation @s WaterBoss_MinYpos = @s WaterBoss_Ypos
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players operation @s WaterBoss_MinZpos = @s WaterBoss_Zpos
 
-execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players operation @s WaterBossMinXpos += @s WaterBossInnXrad
-execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players operation @s WaterBossMinYpos += @s WaterBossInnYrad
-execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players operation @s WaterBossMinZpos += @s WaterBossInnZrad
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players operation @s WaterBoss_MinXpos += @s WaterBoss_InnXrad
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players operation @s WaterBoss_MinYpos += @s WaterBoss_InnYrad
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players operation @s WaterBoss_MinZpos += @s WaterBoss_InnZrad
 
 # Maximum positions #
-execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players operation @s WaterBossMaxXpos = @s WaterBossXpos
-execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players operation @s WaterBossMaxYpos = @s WaterBossYpos
-execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players operation @s WaterBossMaxZpos = @s WaterBossZpos
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players operation @s WaterBoss_MaxXpos = @s WaterBoss_Xpos
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players operation @s WaterBoss_MaxYpos = @s WaterBoss_Ypos
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players operation @s WaterBoss_MaxZpos = @s WaterBoss_Zpos
 
-execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players operation @s WaterBossMaxXpos += @s WaterBossOutXrad
-execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players operation @s WaterBossMaxYpos += @s WaterBossOutYrad
-execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players operation @s WaterBossMaxZpos += @s WaterBossOutZrad
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players operation @s WaterBoss_MaxXpos += @s WaterBoss_OutXrad
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players operation @s WaterBoss_MaxYpos += @s WaterBoss_OutYrad
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players operation @s WaterBoss_MaxZpos += @s WaterBoss_OutZrad
