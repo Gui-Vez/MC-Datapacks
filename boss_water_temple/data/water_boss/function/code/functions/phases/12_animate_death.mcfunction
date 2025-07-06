@@ -11,9 +11,9 @@
 # execute as @e[type=phantom, limit=1, tag=Water_Boss] at @s run tp @p[tag=WaterBoss_Marked] ~ ~10 ~ facing entity @s
 
 # Summon firework rocket as a needle
-# execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] at @s facing entity @p[gamemode=!spectator] eyes run summon firework_rocket ^ ^ ^ {NoGravity:1b,Silent:1b,ShotAtAngle:1b,Tags:["Needle"],LifeTime:30,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"small_ball",has_trail:true,colors:[I;3355443,0],fade_colors:[I;15790320]}]}}}}
+# execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Init"] at @s facing entity @p[gamemode=!spectator] eyes run summon firework_rocket ^ ^ ^ {NoGravity:1b,Silent:1b,ShotAtAngle:1b,Tags:["Needle"],LifeTime:30,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"small_ball",has_trail:true,colors:[I;3355443,0],fade_colors:[I;15790320]}]}}}}
 
 # Aim needle towards player
-# execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] at @s facing entity @p[gamemode=!spectator] eyes run tp @e[type=firework_rocket, tag=Needle] ^ ^ ^0.25
+# execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Init"] at @s facing entity @p[gamemode=!spectator] eyes run tp @e[type=firework_rocket, tag=Needle] ^ ^ ^0.25
 
-scoreboard players set @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID 13
+scoreboard players set $WaterBossPhaseID VAR 13

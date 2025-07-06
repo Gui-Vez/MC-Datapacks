@@ -15,13 +15,13 @@
 # 8 | Next phase
 # 9 | Placeholder
 
-execute if score $AttackID VAR matches 0 run scoreboard players set $AttackTimerLimit VAR -000
-execute if score $AttackID VAR matches 1 run scoreboard players set $AttackTimerLimit VAR 0010
-execute if score $AttackID VAR matches 2 run scoreboard players set $AttackTimerLimit VAR 0005
-execute if score $AttackID VAR matches 3 run scoreboard players set $AttackTimerLimit VAR 0020
-execute if score $AttackID VAR matches 4 run scoreboard players set $AttackTimerLimit VAR 0005
-execute if score $AttackID VAR matches 5 run scoreboard players set $AttackTimerLimit VAR 0020
-execute if score $AttackID VAR matches 6 run scoreboard players set $AttackTimerLimit VAR 0005
-execute if score $AttackID VAR matches 7 run scoreboard players set $AttackTimerLimit VAR 0020
-execute if score $AttackID VAR matches 8 run scoreboard players set $AttackTimerLimit VAR 0080
-execute if score $AttackID VAR matches 9 run scoreboard players set $AttackTimerLimit VAR -000
+execute if score $WaterBossAttackID VAR matches 0 run scoreboard players set $AttackTimerLimit VAR -000
+execute if score $WaterBossAttackID VAR matches 1 run scoreboard players set $AttackTimerLimit VAR 0010
+execute if score $WaterBossAttackID VAR matches 2 run scoreboard players set $AttackTimerLimit VAR 0005
+execute if score $WaterBossAttackID VAR matches 3 run scoreboard players set $AttackTimerLimit VAR 0020
+execute if score $WaterBossAttackID VAR matches 4 run scoreboard players set $AttackTimerLimit VAR 0005
+execute if score $WaterBossAttackID VAR matches 5 run scoreboard players set $AttackTimerLimit VAR 0020
+execute if score $WaterBossAttackID VAR matches 6 run scoreboard players set $AttackTimerLimit VAR 0005
+execute if score $WaterBossAttackID VAR matches 7 run scoreboard players set $AttackTimerLimit VAR 0020
+execute if score $WaterBossAttackID VAR matches 8 run scoreboard players set $AttackTimerLimit VAR 0080
+execute if score $WaterBossAttackID VAR matches 9 run scoreboard players set $AttackTimerLimit VAR -000

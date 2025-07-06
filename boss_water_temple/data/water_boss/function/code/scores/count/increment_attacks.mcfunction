@@ -17,8 +17,8 @@ execute unless score $AttackTimerLimit VAR matches 1.. run scoreboard players se
 # If the timer score is greater than or equal to the used timer limit, set the new attack boolean to 1
 execute unless score $AttackTimerLimit VAR matches 0 if score $AttackTimer VAR >= $AttackTimerLimit VAR run scoreboard players set $NewAttack VAR 1
 
-# If the new attack boolean is set to 1, increment the WaterBossAttackID score of the armor stand
-execute if score $NewAttack VAR matches 1 run scoreboard players add $AttackID VAR 1
+# If the new attack boolean is set to 1, increment the WaterBossAttackID score
+execute if score $NewAttack VAR matches 1 run scoreboard players add $WaterBossAttackID VAR 1
 
 # If a new attack is set, reset the timer and attack boolean
 execute if score $NewAttack VAR matches 1 run scoreboard players set $AttackTimer VAR 0

@@ -21,7 +21,7 @@ say Load
 # tellraw @a [{"text": "-----------------------------"}]
 
 # Boss phases
-# scoreboard players get @e[type=minecraft:armor_stand, name="Water Boss Init", limit=1] WaterBossPhaseID
+# scoreboard players get $WaterBossPhaseID VAR
 # scoreboard players get $PhaseTimerLimit VAR
 
 # tellraw @a [{"text": "-----------------------------"}]
@@ -37,7 +37,7 @@ say Load
 
 # tellraw @a [{"text": "-----------------------------"}]
 
-## Armor stands position debug ##
+## Markers position debug ##
 # execute as @e[scores={WaterBossXpos=..2147483647}   ] run tellraw @a [{"bold":true,"text":"[WaterBossXpos]"   },{"text":" "},{"bold":false,"selector":"@s"}," : ",{"bold":false,"score":{"name":"@s","objective":"WaterBossXpos"}}]
 # execute as @e[scores={WaterBossYpos=..2147483647}   ] run tellraw @a [{"bold":true,"text":"[WaterBossYpos]"   },{"text":" "},{"bold":false,"selector":"@s"}," : ",{"bold":false,"score":{"name":"@s","objective":"WaterBossYpos"}}]
 # execute as @e[scores={WaterBossZpos=..2147483647}   ] run tellraw @a [{"bold":true,"text":"[WaterBossZpos]"   },{"text":" "},{"bold":false,"selector":"@s"}," : ",{"bold":false,"score":{"name":"@s","objective":"WaterBossZpos"}}]

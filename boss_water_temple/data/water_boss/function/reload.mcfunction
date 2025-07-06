@@ -30,4 +30,4 @@ scoreboard players set $init delay_ticks 0
 scoreboard players set $init init_boolean 0
 scoreboard players set $load init_boolean 0
 
-scoreboard players set @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID 0
+scoreboard players set $WaterBossPhaseID VAR 0

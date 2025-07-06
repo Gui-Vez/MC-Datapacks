@@ -14,4 +14,4 @@ function water_boss:code/entities/teleport/move_by_commands
 schedule function water_boss:code/entities/tags/target_platform 15t
 schedule function water_boss:code/functions/attacks/aim_projectiles 1t
 
-scoreboard players set $AttackID VAR 0
+scoreboard players set $WaterBossAttackID VAR 0

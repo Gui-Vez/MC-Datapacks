@@ -84,21 +84,21 @@ scoreboard players set RiptideTimerLimit VAR 50
 execute as @e[type=phantom, limit=1, tag=Water_Boss] run scoreboard players set @s WaterBossHP 100
 
 # Initial positions #
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] run scoreboard players set @s WaterBossXpos -6150
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] run scoreboard players set @s WaterBossYpos 0800
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] run scoreboard players set @s WaterBossZpos -1550
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Init"] run scoreboard players set @s WaterBossXpos -6150
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Init"] run scoreboard players set @s WaterBossYpos 0800
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Init"] run scoreboard players set @s WaterBossZpos -1550
 
 # Inner radius #
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossInnXrad -1200
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossInnYrad -0700
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossInnZrad -1200
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossInnXrad -1200
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossInnYrad -0700
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossInnZrad -1200
 
 # Outer radius #
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossOutXrad 1200
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossOutYrad 0400
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossOutZrad 1200
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossOutXrad 1200
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossOutYrad 0400
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WaterBossOutZrad 1200
 
 # Random Offset #
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] store result score @s WaterBossXoffset run random value -1000..1000
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] store result score @s WaterBossYoffset run random value -0700..0300
-execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Center"] store result score @s WaterBossZoffset run random value -1000..1000
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] store result score @s WaterBossXoffset run random value -1000..1000
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] store result score @s WaterBossYoffset run random value -0700..0300
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] store result score @s WaterBossZoffset run random value -1000..1000

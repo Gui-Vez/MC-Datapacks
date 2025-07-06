@@ -1,6 +1,6 @@
 ## Phase 2 | Once ##
 
-# > Teleport armor stands inside arena
+# > Teleport markers inside arena
 # > Set winning boolean to false
 # > Randomize scores, offset and direction
 # > Show titles and boss bar

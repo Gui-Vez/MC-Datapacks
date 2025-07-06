@@ -1,7 +1,7 @@
 ## Phase 14 | Once ##
 
 # > Set winning boolean to true
-# > Kill all boss dependant entities
+# > Kill all boss dependent entities
 # > Clear running boss fight functions
 
 #############
