@@ -20,14 +20,14 @@
 ### This mcfunction will be loaded only once per reload. ###
 
 # Clear running functions
-function water_boss:code/functions/main/clear_fight
+function water_boss:code/functions/end/clear_fight
 
 # Reset obtained rewards
-function water_boss:code/functions/main/reset_rewards
+function water_boss:code/functions/end/reset_rewards
 
 # Reset the init variables of the Datapack
 scoreboard players set $init delay_ticks 0
 scoreboard players set $init init_boolean 0
 scoreboard players set $load init_boolean 0
 
-scoreboard players set @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID 0
+scoreboard players set $WaterBoss_PhaseID WA_VAR 0

@@ -7,9 +7,9 @@
 tag @e[tag=Water_Boss] remove Lock_Dir
 tag @e[tag=Water_Boss] remove Lock_Rot
 
-tag @e[tag=Water_Boss] remove WB_Targeted
-tag @a remove WB_Targeted
+tag @e[tag=Water_Boss] remove WaterBoss_Targeted
+tag @a remove WaterBoss_Targeted
 
-tag @a remove WB_Marked
-tag @a remove WB_Protected
-tag @a remove WB_Winner
+tag @a remove WaterBoss_Marked
+tag @a remove WaterBoss_Protected
+tag @a remove WaterBoss_Winner

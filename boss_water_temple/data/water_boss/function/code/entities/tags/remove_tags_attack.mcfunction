@@ -4,5 +4,5 @@
 # TAGS #
 ########
 
-tag @e remove WB_Targeted
-tag @a remove WB_Marked
+tag @e remove WaterBoss_Targeted
+tag @a remove WaterBoss_Marked

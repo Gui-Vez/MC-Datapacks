@@ -1,4 +1,4 @@
-## Revoke all advancements dependant on this datapack | Once ##
+## Revoke all advancements dependent on this datapack | Once ##
 
 ################
 # ADVANCEMENTS #

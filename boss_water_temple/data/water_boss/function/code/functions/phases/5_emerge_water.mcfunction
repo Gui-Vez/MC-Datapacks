@@ -7,7 +7,7 @@
 # FUNCTIONS #
 #############
 
-schedule function water_boss:code/scores/count/manage_waypoint_id 1t
-schedule function water_boss:code/entities/teleport/follow_waypoints 1t
+function water_boss:code/scores/count/manage_waypoint_id
+function water_boss:code/entities/teleport/follow_waypoints
 
-execute if score $WaypointID VAR matches 4 run scoreboard players set @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] WaterBossPhaseID 6
+execute if score $WaterBoss_WaypointID WA_VAR matches 4 run scoreboard players set $WaterBoss_PhaseID WA_VAR 6

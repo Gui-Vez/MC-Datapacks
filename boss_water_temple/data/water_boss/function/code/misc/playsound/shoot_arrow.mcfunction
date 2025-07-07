@@ -4,5 +4,5 @@
 # PLAYSOUND #
 #############
 
-playsound minecraft:entity.ender_dragon.flap player @a ~ ~ ~ 0.3 1.2 0.1
-playsound minecraft:block.bubble_column.bubble_pop player @a ~ ~ ~ 5 1 1
+playsound minecraft:entity.ender_dragon.flap player @a[distance=..50] ~ ~ ~ 0.3 1.2 0.1
+playsound minecraft:block.bubble_column.bubble_pop player @a[distance=..50] ~ ~ ~ 5 1 1

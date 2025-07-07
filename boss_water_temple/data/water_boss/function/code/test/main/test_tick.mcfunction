@@ -9,35 +9,39 @@
 
 # tellraw @a [{"text": "_____________________________"}]
 
-# execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Init"] run tellraw @a [{"text":"WaterBossPhaseID"}," : ",{"bold":false,"score":{"name":"@s","objective":"WaterBossPhaseID"}}]
+# tellraw @a [{"text":"$WaterBoss_PhaseID"}," : ",{"bold":false,"score":{"name":"$WaterBoss_PhaseID","objective":"WA_VAR"}}]
 
 # tellraw @a [{"text": "-----------------------------"}]
 
-# execute if entity @a[tag=WB_Protected] run say true
-# execute unless entity @a[tag=WB_Protected] run say false
+# execute as @e[type=phantom] if predicate water_boss:is_in_water run say --> is in water
 
 # tellraw @a [{"text": "-----------------------------"}]
 
-# execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Row", y_rotation=-90..90] run say South
-# execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Row", y_rotation=90..-90] run say North
+# execute if entity @a[tag=WaterBoss_Protected] run say true
+# execute unless entity @a[tag=WaterBoss_Protected] run say false
 
 # tellraw @a [{"text": "-----------------------------"}]
 
-# execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Row"] if entity @s[tag=Lock_Dir] run say true
-# execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Row"] unless entity @s[tag=Lock_Dir] run say false
+# execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Row", y_rotation=-90..90] run say South
+# execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Row", y_rotation=90..-90] run say North
 
 # tellraw @a [{"text": "-----------------------------"}]
 
-# execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Row"] run tellraw @a [{"text":"WaterBossYrot"}," : ",{"bold":false,"score":{"name":"@s","objective":"WaterBossYrot"}}]
-
-# execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Row"] if entity @s[tag=Lock_Dir] run say Lock_Dir true
-# execute as @e[type=armor_stand, limit=1, tag=Water_Boss, name="Water Boss Row"] if entity @s[tag=!Lock_Dir] run say Lock_Dir false
+# execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Row"] if entity @s[tag=Lock_Dir] run say true
+# execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Row"] unless entity @s[tag=Lock_Dir] run say false
 
 # tellraw @a [{"text": "-----------------------------"}]
 
-# tellraw @a [{"text":"WaterBossYrot ($YrotLoffsetNeg)"}," : ",{"bold":false,"score":{"name":"$YrotLoffsetNeg","objective":"WaterBossYrot"}}]
-# tellraw @a [{"text":"WaterBossYrot ($YrotLoffsetPos)"}," : ",{"bold":false,"score":{"name":"$YrotLoffsetPos","objective":"WaterBossYrot"}}]
-# tellraw @a [{"text":"WaterBossYrot ($YrotRoffsetNeg)"}," : ",{"bold":false,"score":{"name":"$YrotRoffsetNeg","objective":"WaterBossYrot"}}]
-# tellraw @a [{"text":"WaterBossYrot ($YrotRoffsetPos)"}," : ",{"bold":false,"score":{"name":"$YrotRoffsetPos","objective":"WaterBossYrot"}}]
+# execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Row"] run tellraw @a [{"text":"WaterBoss_Yrot"}," : ",{"bold":false,"score":{"name":"@s","objective":"WaterBoss_Yrot"}}]
+
+# execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Row"] if entity @s[tag=Lock_Dir] run say Lock_Dir true
+# execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Row"] if entity @s[tag=!Lock_Dir] run say Lock_Dir false
+
+# tellraw @a [{"text": "-----------------------------"}]
+
+# tellraw @a [{"text":"WaterBoss_Yrot ($YrotLoffsetNeg)"}," : ",{"bold":false,"score":{"name":"$YrotLoffsetNeg","objective":"WaterBoss_Yrot"}}]
+# tellraw @a [{"text":"WaterBoss_Yrot ($YrotLoffsetPos)"}," : ",{"bold":false,"score":{"name":"$YrotLoffsetPos","objective":"WaterBoss_Yrot"}}]
+# tellraw @a [{"text":"WaterBoss_Yrot ($YrotRoffsetNeg)"}," : ",{"bold":false,"score":{"name":"$YrotRoffsetNeg","objective":"WaterBoss_Yrot"}}]
+# tellraw @a [{"text":"WaterBoss_Yrot ($YrotRoffsetPos)"}," : ",{"bold":false,"score":{"name":"$YrotRoffsetPos","objective":"WaterBoss_Yrot"}}]
 
 # tellraw @a [{"text": "_____________________________"}]
