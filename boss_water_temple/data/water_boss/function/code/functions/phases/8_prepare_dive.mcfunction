@@ -7,7 +7,7 @@
 # FUNCTIONS #
 #############
 
-scoreboard players set $AttackTimer WaterBoss_VAR 0
+scoreboard players set $AttackTimer WA_VAR 0
 
 function water_boss:code/entities/tags/remove_tags_attack
 
@@ -18,4 +18,4 @@ schedule function water_boss:code/entities/teleport/move_by_commands 1t
 schedule function water_boss:code/functions/attacks/aim_projectiles 1t
 schedule function water_boss:code/functions/attacks/manage_waypoints 2t
 
-scoreboard players set $WaterBoss_WaypointID WaterBoss_VAR 5
+scoreboard players set $WaterBoss_WaypointID WA_VAR 5

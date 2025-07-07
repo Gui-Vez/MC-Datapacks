@@ -4,5 +4,5 @@
 # SCORES #
 ##########
 
-scoreboard players add $ContactTimer WaterBoss_VAR 1
-execute if score $ContactTimer WaterBoss_VAR matches 10.. run scoreboard players set $ContactTimer WaterBoss_VAR 0
+scoreboard players add $ContactTimer WA_VAR 1
+execute if score $ContactTimer WA_VAR matches 10.. run scoreboard players set $ContactTimer WA_VAR 0

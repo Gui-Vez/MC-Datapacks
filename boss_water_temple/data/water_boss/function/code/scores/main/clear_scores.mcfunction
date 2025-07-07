@@ -5,8 +5,8 @@
 ##########
 
 # Clear the scores
-scoreboard objectives remove WaterBoss_VAR
-scoreboard objectives remove WaterBoss_CONST
+scoreboard objectives remove WA_VAR
+scoreboard objectives remove WA_CONST
 
 scoreboard objectives remove WaterBoss_Xpos
 scoreboard objectives remove WaterBoss_Ypos
@@ -40,7 +40,10 @@ scoreboard objectives remove WaterBoss_MaxYpos
 scoreboard objectives remove WaterBoss_MaxZpos
 
 scoreboard objectives remove WaterBoss_PhaseID
-scoreboard objectives remove WaterBoss_HP
+scoreboard objectives remove WaterBoss_Health
+
+scoreboard objectives remove WaterBoss_InWater
+scoreboard objectives remove WaterBoss_LastInWater
 
 scoreboard objectives remove WaterBoss_TurningSpeed
 scoreboard objectives remove WaterBoss_EntityCount

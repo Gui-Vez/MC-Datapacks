@@ -8,20 +8,20 @@
 # FUNCTIONS #
 #############
 
-execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 00 run scoreboard players set $PhaseTimerLimit WaterBoss_VAR 0010
-execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 01 run scoreboard players set $PhaseTimerLimit WaterBoss_VAR -000
-execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 02 run scoreboard players set $PhaseTimerLimit WaterBoss_VAR 0002
-execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 03 run scoreboard players set $PhaseTimerLimit WaterBoss_VAR 0300
-execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 04 run scoreboard players set $PhaseTimerLimit WaterBoss_VAR 0020
-execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 05 run scoreboard players set $PhaseTimerLimit WaterBoss_VAR 0100
-execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 06 run scoreboard players set $PhaseTimerLimit WaterBoss_VAR 0150
-execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 07 run scoreboard players set $PhaseTimerLimit WaterBoss_VAR -000
-execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 08 run scoreboard players set $PhaseTimerLimit WaterBoss_VAR 0075
-execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 09 run scoreboard players set $PhaseTimerLimit WaterBoss_VAR 0100
-execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 10 run scoreboard players set $PhaseTimerLimit WaterBoss_VAR -000
-execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 11 run scoreboard players set $PhaseTimerLimit WaterBoss_VAR -000
-execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 12 run scoreboard players set $PhaseTimerLimit WaterBoss_VAR -000
-execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 13 run scoreboard players set $PhaseTimerLimit WaterBoss_VAR -000
-execute if score $WaterBoss_PhaseID WaterBoss_VAR matches 14 run scoreboard players set $PhaseTimerLimit WaterBoss_VAR -000
+execute if score $WaterBoss_PhaseID WA_VAR matches 00 run scoreboard players set $PhaseTimerLimit WA_VAR 0010
+execute if score $WaterBoss_PhaseID WA_VAR matches 01 run scoreboard players set $PhaseTimerLimit WA_VAR -000
+execute if score $WaterBoss_PhaseID WA_VAR matches 02 run scoreboard players set $PhaseTimerLimit WA_VAR 0002
+execute if score $WaterBoss_PhaseID WA_VAR matches 03 run scoreboard players set $PhaseTimerLimit WA_VAR 0300
+execute if score $WaterBoss_PhaseID WA_VAR matches 04 run scoreboard players set $PhaseTimerLimit WA_VAR 0020
+execute if score $WaterBoss_PhaseID WA_VAR matches 05 run scoreboard players set $PhaseTimerLimit WA_VAR 0100
+execute if score $WaterBoss_PhaseID WA_VAR matches 06 run scoreboard players set $PhaseTimerLimit WA_VAR 0150
+execute if score $WaterBoss_PhaseID WA_VAR matches 07 run scoreboard players set $PhaseTimerLimit WA_VAR -000
+execute if score $WaterBoss_PhaseID WA_VAR matches 08 run scoreboard players set $PhaseTimerLimit WA_VAR 0075
+execute if score $WaterBoss_PhaseID WA_VAR matches 09 run scoreboard players set $PhaseTimerLimit WA_VAR 0100
+execute if score $WaterBoss_PhaseID WA_VAR matches 10 run scoreboard players set $PhaseTimerLimit WA_VAR -000
+execute if score $WaterBoss_PhaseID WA_VAR matches 11 run scoreboard players set $PhaseTimerLimit WA_VAR -000
+execute if score $WaterBoss_PhaseID WA_VAR matches 12 run scoreboard players set $PhaseTimerLimit WA_VAR -000
+execute if score $WaterBoss_PhaseID WA_VAR matches 13 run scoreboard players set $PhaseTimerLimit WA_VAR -000
+execute if score $WaterBoss_PhaseID WA_VAR matches 14 run scoreboard players set $PhaseTimerLimit WA_VAR -000
 
 function water_boss:code/scores/count/increment_phases

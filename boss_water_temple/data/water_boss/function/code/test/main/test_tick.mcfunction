@@ -9,7 +9,7 @@
 
 # tellraw @a [{"text": "_____________________________"}]
 
-# tellraw @a [{"text":"$WaterBoss_PhaseID"}," : ",{"bold":false,"score":{"name":"$WaterBoss_PhaseID","objective":"WaterBoss_VAR"}}]
+# tellraw @a [{"text":"$WaterBoss_PhaseID"}," : ",{"bold":false,"score":{"name":"$WaterBoss_PhaseID","objective":"WA_VAR"}}]
 
 # tellraw @a [{"text": "-----------------------------"}]
 

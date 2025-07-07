@@ -6,9 +6,9 @@
 
 ## Objectives ##
 
-scoreboard objectives add WaterBoss_VAR dummy "Water Boss Variable Value"
-scoreboard objectives add WaterBoss_CONST dummy "Water Boss Constant Value"
-scoreboard objectives add WaterBoss_PermVAR dummy "Water Boss Permanent Variable"
+scoreboard objectives add WA_VAR dummy "Water Boss Variable Value"
+scoreboard objectives add WA_CONST dummy "Water Boss Constant Value"
+scoreboard objectives add WA_PERMVAR dummy "Water Boss Permanent Variable"
 
 scoreboard objectives add WaterBoss_Xpos dummy "Water Boss X Position"
 scoreboard objectives add WaterBoss_Ypos dummy "Water Boss Y Position"
@@ -42,7 +42,10 @@ scoreboard objectives add WaterBoss_MaxYpos dummy "Water Boss Maximum Y Position
 scoreboard objectives add WaterBoss_MaxZpos dummy "Water Boss Maximum Z Position"
 
 scoreboard objectives add WaterBoss_PhaseID dummy "Water Boss Phase ID"
-scoreboard objectives add WaterBoss_HP dummy "Water Boss Health Points"
+scoreboard objectives add WaterBoss_Health dummy "Water Boss Health Points"
+
+scoreboard objectives add WaterBoss_InWater dummy "Water Boss In Water Boolean"
+scoreboard objectives add WaterBoss_LastInWater dummy "Water Boss Last Time in Water"
 
 scoreboard objectives add WaterBoss_TurningSpeed dummy "Water Boss Turning Speed"
 scoreboard objectives add WaterBoss_EntityCount dummy "Water Boss Entity Count"
@@ -62,25 +65,25 @@ scoreboard objectives add WaterBoss_RiptideTimerLimit dummy "Riptide Timer Limit
 ## Values ##
 
 # Constant values
-scoreboard players set -1 WaterBoss_CONST -1
+scoreboard players set -1 WA_CONST -1
 
-scoreboard players set 00000 WaterBoss_CONST 00000
-scoreboard players set 18000 WaterBoss_CONST 18000
-scoreboard players set 36000 WaterBoss_CONST 36000
+scoreboard players set 00000 WA_CONST 00000
+scoreboard players set 18000 WA_CONST 18000
+scoreboard players set 36000 WA_CONST 36000
 
 # Rotational speeds
 scoreboard players set $leftTurnSpeed WaterBoss_TurningSpeed 750
 scoreboard players set $rightTurnSpeed WaterBoss_TurningSpeed 750
 
 # Maximal number of projectiles shot
-scoreboard players set MaxProjectiles WaterBoss_EntityCount 10
+scoreboard players set $MaxProjectiles WaterBoss_EntityCount 10
 
 # Timer values for the invulnerability frames of the trident
 scoreboard players set @a WaterBoss_RiptideTimer 0
-scoreboard players set WaterBoss_RiptideTimerLimit WaterBoss_VAR 50
+scoreboard players set WaterBoss_RiptideTimerLimit WA_VAR 50
 
 # Initial Boss HP
-execute as @e[type=phantom, limit=1, tag=Water_Boss] run scoreboard players set @s WaterBoss_HP 100
+execute as @e[type=phantom, limit=1, tag=Water_Boss] run scoreboard players set @s WaterBoss_Health 100
 
 # Initial positions #
 execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Init"] run scoreboard players set @s WaterBoss_Xpos -6150

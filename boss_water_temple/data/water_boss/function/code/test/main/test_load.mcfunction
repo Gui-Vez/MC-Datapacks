@@ -21,8 +21,8 @@ say Load
 # tellraw @a [{"text": "-----------------------------"}]
 
 # Boss phases
-# scoreboard players get $WaterBoss_PhaseID WaterBoss_VAR
-# scoreboard players get $PhaseTimerLimit WaterBoss_VAR
+# scoreboard players get $WaterBoss_PhaseID WA_VAR
+# scoreboard players get $PhaseTimerLimit WA_VAR
 
 # tellraw @a [{"text": "-----------------------------"}]
 
@@ -32,7 +32,7 @@ say Load
 # tellraw @a [{"text": "-----------------------------"}]
 
 # Boss HP
-# scoreboard players get @e[type=phantom, limit=1, tag=Water_Boss] WaterBoss_HP
+# scoreboard players get @e[type=phantom, limit=1, tag=Water_Boss] WaterBoss_Health
 # data get entity @e[type=phantom, limit=1, tag=Water_Boss] Health
 
 # tellraw @a [{"text": "-----------------------------"}]
