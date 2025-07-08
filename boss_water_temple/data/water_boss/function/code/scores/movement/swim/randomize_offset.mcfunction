@@ -4,6 +4,6 @@
 # SCORES #
 ##########
 
-scoreboard players operation @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Column"] WaterBoss_Xpos += @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] WaterBoss_Xoffset
-scoreboard players operation @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Depth" ] WaterBoss_Ypos += @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] WaterBoss_Yoffset
-scoreboard players operation @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Row"   ] WaterBoss_Zpos += @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] WaterBoss_Zoffset
+scoreboard players operation @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Column"] WA_Xpos += @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] WA_Xoffset
+scoreboard players operation @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Depth" ] WA_Ypos += @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] WA_Yoffset
+scoreboard players operation @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Row"   ] WA_Zpos += @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] WA_Zoffset

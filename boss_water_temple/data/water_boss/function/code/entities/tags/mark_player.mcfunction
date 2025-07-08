@@ -4,4 +4,4 @@
 # TAGS #
 ########
 
-execute if score $WaterBoss_AttackID WA_VAR matches 0 as @e[type=phantom, limit=1, tag=Water_Boss] at @s if entity @e[tag=WaterBoss_Targeted, limit=1, sort=nearest, distance=0..10] run execute as @e[type=phantom, limit=1, tag=Water_Boss] at @s as @p[gamemode=!spectator, tag=!WaterBoss_Marked] run tag @s add WaterBoss_Marked
+execute if score $AttackID WA_VAR matches 0 as @e[type=phantom, limit=1, tag=Water_Boss] at @s if entity @e[tag=WA_Targeted, limit=1, sort=nearest, distance=0..10] run execute as @e[type=phantom, limit=1, tag=Water_Boss] at @s as @p[gamemode=!spectator, tag=!WA_Marked] run tag @s add WA_Marked

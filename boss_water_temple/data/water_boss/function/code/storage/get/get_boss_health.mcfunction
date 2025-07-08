@@ -4,4 +4,4 @@
 # STORAGE #
 ###########
 
-execute as @e[type=phantom, limit=1, tag=Water_Boss] run execute store result score @s WaterBoss_Health run data get entity @s Health
+execute as @e[type=phantom, limit=1, tag=Water_Boss] run execute store result score @s WA_Health run data get entity @s Health

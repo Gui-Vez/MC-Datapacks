@@ -4,5 +4,5 @@
 # EFFECTS #
 ###########
 
-execute as @e[type=phantom, limit=1, tag=Water_Boss] at @s if entity @a[tag=WaterBoss_Marked, distance=0..5, predicate=!water_boss:is_in_water] run effect give @s slowness 1 2 true
-execute as @e[type=phantom, limit=1, tag=Water_Boss] at @s unless entity @a[tag=WaterBoss_Marked, distance=0..5] run effect clear slowness
+execute as @e[type=phantom, limit=1, tag=Water_Boss] at @s if entity @a[tag=WA_Marked, distance=0..5, predicate=!water_boss:is_in_water] run effect give @s slowness 1 2 true
+execute as @e[type=phantom, limit=1, tag=Water_Boss] at @s unless entity @a[tag=WA_Marked, distance=0..5] run effect clear slowness
