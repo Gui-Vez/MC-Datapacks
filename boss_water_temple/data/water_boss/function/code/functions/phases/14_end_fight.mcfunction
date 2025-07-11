@@ -8,7 +8,5 @@
 # FUNCTIONS #
 #############
 
-say here
-
 function water_boss:code/scores/count/win_boolean
 function water_boss:code/functions/end/clear_fight

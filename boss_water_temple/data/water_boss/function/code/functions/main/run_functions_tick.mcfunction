@@ -7,8 +7,11 @@
 # Tick Test #
 execute if score $init delay_ticks matches 20.. run schedule function water_boss:code/test/main/test_tick 1t
 
+# Delay and increment phases #
+execute if score $PhaseID WA_VAR matches 0.. run function water_boss:code/scores/count/delay_phases
+execute if score $PhaseID WA_VAR matches 0.. run function water_boss:code/scores/count/increment_phases
+
 # Run phases #
-execute if score $PhaseID WA_VAR matches 0.. run function water_boss:code/functions/phases/0_delay_phases
 execute if score $PhaseID WA_VAR matches 001 run function water_boss:code/functions/phases/1_detect_player_start
 execute if score $PhaseID WA_VAR matches 002 run function water_boss:code/functions/phases/2_init_fight
 execute if score $PhaseID WA_VAR matches 003 run function water_boss:code/functions/phases/3_swim_idle

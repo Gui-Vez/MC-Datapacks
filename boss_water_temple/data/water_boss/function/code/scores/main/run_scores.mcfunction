@@ -78,17 +78,18 @@ scoreboard players set $rightTurnSpeed WA_TurningSpeed 750
 # Maximal number of projectiles shot
 scoreboard players set $MaxProjectiles WA_EntityCount 10
 
-# Timer values for the invulnerability frames of the trident
-scoreboard players set @a WA_RiptideTimer 0
-scoreboard players set WA_RiptideTimerLimit WA_VAR 50
-
 # Initial Boss HP
 execute as @e[type=phantom, limit=1, tag=Water_Boss] run scoreboard players set @s WA_Health 100
 
-# Initial positions #
+# Trigger zone position #    <-- To change
 execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Init"] run scoreboard players set @s WA_Xpos -6150
 execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Init"] run scoreboard players set @s WA_Ypos 0800
 execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Init"] run scoreboard players set @s WA_Zpos -1550
+
+# Stand-by zone position #   <-- To change
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WA_Xpos 0100
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WA_Ypos 0200
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WA_Zpos 0300
 
 # Inner radius #
 execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WA_InnXrad -1200

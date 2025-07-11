@@ -23,5 +23,3 @@ execute if score $PhaseID WA_VAR matches 11 run scoreboard players set $PhaseTim
 execute if score $PhaseID WA_VAR matches 12 run scoreboard players set $PhaseTimerLimit WA_VAR -000
 execute if score $PhaseID WA_VAR matches 13 run scoreboard players set $PhaseTimerLimit WA_VAR -000
 execute if score $PhaseID WA_VAR matches 14 run scoreboard players set $PhaseTimerLimit WA_VAR -000
-
-function water_boss:code/scores/count/increment_phases

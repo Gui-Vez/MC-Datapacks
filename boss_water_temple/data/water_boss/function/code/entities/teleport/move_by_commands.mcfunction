@@ -6,7 +6,7 @@
 
 ## Phase 1)
 # Teleport Phantom to Center
-execute if score $PhaseID WA_VAR matches 1 run execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run tp @e[type=phantom, limit=1, tag=Water_Boss] ~ ~ ~
+execute if score $PhaseID WA_VAR matches 1 run execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] at @s run tp @e[type=phantom, limit=1, tag=Water_Boss] ~ ~ ~
 
 ## Phase 3)
 # Rotate Depth depending on Row's rotation
