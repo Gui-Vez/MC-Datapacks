@@ -75,18 +75,21 @@ scoreboard players set 36000 WA_CONST 36000
 scoreboard players set $leftTurnSpeed WA_TurningSpeed 750
 scoreboard players set $rightTurnSpeed WA_TurningSpeed 750
 
+# Wall bounce offset
+scoreboard players set $BounceOffset WA_VAR 7500
+
 # Maximal number of projectiles shot
 scoreboard players set $MaxProjectiles WA_EntityCount 10
 
 # Initial Boss HP
 execute as @e[type=phantom, limit=1, tag=Water_Boss] run scoreboard players set @s WA_Health 100
 
-# Trigger zone position #    <-- To change
+# Trigger zone position | Center of arena #    <-- To change
 execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Init"] run scoreboard players set @s WA_Xpos -6150
 execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Init"] run scoreboard players set @s WA_Ypos 0800
 execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Init"] run scoreboard players set @s WA_Zpos -1550
 
-# Stand-by zone position #   <-- To change
+# Stand-by zone position | Out of bounds #   <-- To change
 execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WA_Xpos 0100
 execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WA_Ypos 0200
 execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Center"] run scoreboard players set @s WA_Zpos 0300
