@@ -15,3 +15,6 @@ execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Init"] at @
 # Lit up platforms
 execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Init"] at @s run function water_boss:code/blocks/fill/platforms/lit/bottom
 execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Init"] at @s run function water_boss:code/blocks/fill/platforms/lit/top
+
+# Water top
+execute as @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Init"] at @s run function water_boss:code/blocks/fill/platforms/water_top

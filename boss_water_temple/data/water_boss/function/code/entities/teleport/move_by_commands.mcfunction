@@ -38,8 +38,8 @@ execute if score $PhaseID WA_VAR matches 6 as @e[type=marker, limit=1, tag=Water
 
 ## Phase 7)
 # Move phantom towards targeted platform or player
-execute if score $PhaseID WA_VAR matches 7 unless score $AttackID WA_VAR matches 1 as @e[type=phantom, limit=1, tag=Water_Boss] at @s rotated ~ -15 facing entity @e[tag=WA_Targeted, distance=..100, limit=1, sort=nearest] eyes unless entity @e[tag=WA_Targeted, distance=0..10] unless entity @e[type=marker, tag=WA_Marked, limit=1, distance=0..6] run tp @s ^ ^ ^0.35 ~ ~
-execute if score $PhaseID WA_VAR matches 7 unless score $AttackID WA_VAR matches 1 as @e[type=phantom, limit=1, tag=Water_Boss] at @s rotated ~ -15 facing entity @p[gamemode=!spectator, distance=..100, limit=1] eyes if entity @e[tag=WA_Marked, limit=1, distance=0..10] run tp @s ^ ^ ^ ~ ~
+execute if score $PhaseID WA_VAR matches 7 unless score $AttackID WA_VAR matches 1 as @e[type=phantom, limit=1, tag=Water_Boss] at @s rotated ~ -15 facing entity @e[tag=WA_Targeted, distance=..100, limit=1, sort=nearest] eyes unless entity @e[tag=WA_Targeted, distance=0..5] unless entity @e[type=marker, tag=WA_Marked, limit=1, distance=0..6] run tp @s ^ ^ ^0.35 ~ ~
+execute if score $PhaseID WA_VAR matches 7 unless score $AttackID WA_VAR matches 1 as @e[type=phantom, limit=1, tag=Water_Boss] at @s rotated ~ -15 facing entity @p[gamemode=!spectator, distance=..100, limit=1] eyes if entity @e[tag=WA_Marked, limit=1, distance=0..5] run tp @s ^ ^ ^ ~ ~
 # Move phantom towards targeted player, if it is in water
 execute if score $PhaseID WA_VAR matches 7 if score $AttackID WA_VAR matches 2..4 as @e[type=phantom, limit=1, tag=Water_Boss] at @s rotated ~ -30 facing entity @e[tag=WA_Targeted, distance=..100, limit=1, sort=nearest] eyes unless entity @p[gamemode=!spectator, distance=0..5] if predicate water_boss:is_in_water run tp @s ^ ^ ^0.05 ~ ~
 

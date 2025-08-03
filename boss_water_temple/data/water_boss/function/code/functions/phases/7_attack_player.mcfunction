@@ -16,5 +16,7 @@ schedule function water_boss:code/entities/tags/mark_player 1t
 schedule function water_boss:code/scores/count/manage_attack_id 1t
 schedule function water_boss:code/scores/count/skip_attack 1t
 
+schedule function water_boss:code/functions/attacks/ignite_a_platform 1t
+
 schedule function water_boss:code/functions/attacks/prepare_projectiles 1t
 schedule function water_boss:code/scores/count/increment_attacks 1t
