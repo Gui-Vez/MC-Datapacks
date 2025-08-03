@@ -30,7 +30,7 @@ scoreboard objectives remove init_boolean
 scoreboard objectives remove delay_ticks
 
 # Remove the phase ID scoreboard
-scoreboard objectives remove WaterBossPhaseID
+scoreboard players reset $PhaseID WA_VAR
 
 # Alert the player that the Datapack is no longer running
 tellraw @a [{"text": "The Datapack has been uninstalled.\nUse /datapack enable \"file/boss_water_temple\" to reinstall.", "color": "yellow"}]

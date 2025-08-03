@@ -10,4 +10,4 @@
 function water_boss:code/storage/reset/reset_pivots_positions
 function water_boss:code/storage/reset/reset_pivots_rotations
 
-scoreboard players set $WaterBoss_PhaseID WA_VAR 3
+scoreboard players set $PhaseID WA_VAR 3

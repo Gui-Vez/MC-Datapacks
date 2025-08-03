@@ -4,9 +4,11 @@
 # SCORES #
 ##########
 
-scoreboard players add @a[scores={WaterBoss_RiptideUse=1..}, predicate=water_boss:has_riptide_trident, predicate=!water_boss:is_slow] WaterBoss_RiptideTimer 1
-scoreboard players set @a[scores={WaterBoss_RiptideUse=1..}, predicate=water_boss:is_slow] WaterBoss_RiptideTimer 0
+scoreboard players set @a WA_RiptideTimerLimit 50
 
-execute as @a if score @s WaterBoss_RiptideTimer >= WaterBoss_RiptideTimerLimit WA_VAR run scoreboard players set @s WaterBoss_RiptideUse 0
+scoreboard players add @a[scores={WA_RiptideUse=1..}, predicate=water_boss:has_riptide_trident, predicate=!water_boss:is_slow] WA_RiptideTimer 1
+scoreboard players set @a[scores={WA_RiptideUse=1..}, predicate=water_boss:is_slow] WA_RiptideTimer 0
 
-execute as @a[scores={WaterBoss_RiptideUse=0}] run scoreboard players set @s WaterBoss_RiptideTimer 0
+execute as @a if score @s WA_RiptideTimer >= @s WA_RiptideTimerLimit run scoreboard players set @s WA_RiptideUse 0
+
+execute as @a[scores={WA_RiptideUse=0}] run scoreboard players set @s WA_RiptideTimer 0

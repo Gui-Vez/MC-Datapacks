@@ -24,6 +24,7 @@ function water_boss:code/scores/movement/swim/abs_value
 function water_boss:code/scores/movement/swim/min_max_borders
 function water_boss:code/scores/movement/swim/move_by_score
 function water_boss:code/scores/movement/swim/turn_pivots
+function water_boss:code/scores/movement/swim/bounce_offset
 
 
 schedule function water_boss:code/scores/movement/swim/clamp_positions 1t

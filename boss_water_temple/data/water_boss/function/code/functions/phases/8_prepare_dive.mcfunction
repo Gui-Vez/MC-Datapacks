@@ -18,4 +18,4 @@ schedule function water_boss:code/entities/teleport/move_by_commands 1t
 schedule function water_boss:code/functions/attacks/aim_projectiles 1t
 schedule function water_boss:code/functions/attacks/manage_waypoints 2t
 
-scoreboard players set $WaterBoss_WaypointID WA_VAR 5
+scoreboard players set $WaypointID WA_VAR 5

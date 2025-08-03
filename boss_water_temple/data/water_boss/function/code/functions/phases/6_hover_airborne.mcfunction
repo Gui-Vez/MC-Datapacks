@@ -14,4 +14,4 @@ function water_boss:code/functions/attacks/aim_projectiles
 
 schedule function water_boss:code/entities/tags/target_platform 15t
 
-scoreboard players set $WaterBoss_AttackID WA_VAR 0
+scoreboard players set $AttackID WA_VAR 0

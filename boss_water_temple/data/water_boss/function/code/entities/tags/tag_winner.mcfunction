@@ -4,4 +4,4 @@
 # TAGS #
 ########
 
-tag @s add WaterBoss_Winner
+tag @s add WA_Winner

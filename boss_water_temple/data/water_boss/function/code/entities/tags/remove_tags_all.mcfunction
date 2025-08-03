@@ -4,12 +4,12 @@
 # TAGS #
 ########
 
-tag @e[tag=Water_Boss] remove Lock_Dir
-tag @e[tag=Water_Boss] remove Lock_Rot
+tag @e[tag=Water_Boss] remove WA_Locked_Dir
+tag @e[tag=Water_Boss] remove WA_Locked_Rot
 
-tag @e[tag=Water_Boss] remove WaterBoss_Targeted
-tag @a remove WaterBoss_Targeted
+tag @e remove WA_Targeted
+tag @e remove WA_Initialized
 
-tag @a remove WaterBoss_Marked
-tag @a remove WaterBoss_Protected
-tag @a remove WaterBoss_Winner
+tag @a remove WA_Marked
+tag @a remove WA_Protected
+tag @a remove WA_Winner
