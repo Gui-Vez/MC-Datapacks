@@ -45,6 +45,9 @@ scoreboard objectives remove WA_Health
 scoreboard objectives remove WA_InWater
 scoreboard objectives remove WA_LastInWater
 
+scoreboard objectives remove WA_Initialized
+scoreboard objectives remove WA_LastInitialized
+
 scoreboard objectives remove WA_TurningSpeed
 scoreboard objectives remove WA_EntityCount
 

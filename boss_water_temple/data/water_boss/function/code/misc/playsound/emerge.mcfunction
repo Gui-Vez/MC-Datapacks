@@ -4,4 +4,4 @@
 # PLAYSOUND #
 #############
 
-playsound minecraft:entity.phantom.swoop player @a[distance=..50] ~ ~ ~ 1 0.75 0.5
+playsound minecraft:entity.phantom.ambient player @a[distance=..50] ~ ~ ~ 1 0.75 1

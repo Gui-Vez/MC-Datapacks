@@ -4,4 +4,4 @@
 # PLAYSOUND #
 #############
 
-playsound minecraft:entity.wither.ambient player @a[distance=..50] ~ ~ ~ 1 0.85 0.5
+playsound minecraft:entity.wither.ambient player @a[distance=..50] ~ ~ ~ 0.5 0.85 0.2

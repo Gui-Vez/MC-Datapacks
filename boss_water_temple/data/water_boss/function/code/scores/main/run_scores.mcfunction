@@ -44,6 +44,9 @@ scoreboard objectives add WA_MaxZpos dummy "Water Boss Maximum Z Position"
 scoreboard objectives add PhaseID dummy "Water Boss Phase ID"
 scoreboard objectives add WA_Health dummy "Water Boss Health Points"
 
+scoreboard objectives add WA_Initialized dummy "Water Boss Initialization Boolean"
+scoreboard objectives add WA_LastInitialized dummy "Water Boss Last Time Initialized"
+
 scoreboard objectives add WA_InWater dummy "Water Boss In Water Boolean"
 scoreboard objectives add WA_LastInWater dummy "Water Boss Last Time in Water"
 
