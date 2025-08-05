@@ -8,6 +8,7 @@
 #############
 
 function water_boss:code/entities/teleport/move_by_commands
+function water_boss:code/scores/count/time_fire_fx
 
 schedule function water_boss:code/entities/effects/slow_boss 1t
 

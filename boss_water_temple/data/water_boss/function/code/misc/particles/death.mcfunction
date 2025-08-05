@@ -5,3 +5,4 @@
 #############
 
 particle minecraft:explosion_emitter ~ ~0.5 ~ 0.5 0.5 0.5 0.2 1
+particle minecraft:explosion ~ ~0.3 ~ 1.5 1.5 1.5 0.2 5
