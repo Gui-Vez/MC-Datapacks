@@ -41,6 +41,7 @@ execute if score $PhaseID WA_VAR matches 3..10 run function water_boss:code/misc
 execute if score $PhaseID WA_VAR matches 3..10 run function water_boss:code/misc/bossbar/show_bossbar
 execute if score $PhaseID WA_VAR matches 3..10 run function water_boss:code/scores/count/detect_death
 
+execute if score $PhaseID WA_VAR matches 3..14 run function water_boss:code/functions/fx/randomize_effects
 execute if score $PhaseID WA_VAR matches 3..14 run function water_boss:code/functions/fx/manage_particles
 execute if score $PhaseID WA_VAR matches 3..14 run function water_boss:code/functions/fx/manage_sounds
 execute if score $PhaseID WA_VAR matches 3..14 run function water_boss:code/scores/count/trigger_fx

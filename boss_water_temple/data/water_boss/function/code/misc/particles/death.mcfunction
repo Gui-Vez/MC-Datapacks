@@ -1,4 +1,4 @@
-## Show the particle effect that runs once the phantom dies | Once ##
+## Show the particle effects that runs once the phantom dies | Once ##
 
 #############
 # PARTICLES #

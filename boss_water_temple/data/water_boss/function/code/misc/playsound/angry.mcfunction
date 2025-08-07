@@ -1,4 +1,4 @@
-## Play the rush sound effect when the phantom rushes to a platform | Once ##
+## Play the angry SFX when the phantom rushes to a platform | Once ##
 
 #############
 # PLAYSOUND #

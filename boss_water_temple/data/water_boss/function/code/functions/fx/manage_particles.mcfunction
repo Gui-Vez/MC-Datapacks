@@ -12,6 +12,9 @@ execute as @e[type=phantom, limit=1, tag=Water_Boss] if entity @s[scores={WA_Las
 execute if score $PhaseID WA_VAR matches 7 as @e[type=marker, tag=Water_Boss, tag=Platform, tag=WA_Lit] if entity @s[scores={WA_LastIgnited=1, WA_Ignited=0}] at @s run function water_boss:code/misc/particles/ignite
 execute if score $PhaseID WA_VAR matches 8 as @e[type=marker, tag=Water_Boss, tag=Platform, tag=!WA_Lit] if entity @s[scores={WA_LastIgnited=0, WA_Ignited=1}] at @s run function water_boss:code/misc/particles/extinguish
 
+# Swim
+execute as @e[type=phantom, limit=1, tag=Water_Boss] at @s if score $SwimTimer WA_VAR matches 1 run function water_boss:code/misc/particles/swim
+
 # Bottom platform flames
 execute if score $FireTimer WA_VAR matches 1 as @e[type=marker, limit=1, tag=Water_Boss, tag=Platform, tag=WA_Lit, name="Water Boss Platform N"] at @s positioned ~ ~-1.5 ~ run function water_boss:code/misc/particles/flames_bottom_ns
 execute if score $FireTimer WA_VAR matches 1 as @e[type=marker, limit=1, tag=Water_Boss, tag=Platform, tag=WA_Lit, name="Water Boss Platform S"] at @s positioned ~ ~-1.5 ~ run function water_boss:code/misc/particles/flames_bottom_ns

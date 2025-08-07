@@ -1,4 +1,4 @@
-## Play the splash out sound effect | Once ##
+## Play the splash out SFX | Once ##
 
 #############
 # PLAYSOUND #

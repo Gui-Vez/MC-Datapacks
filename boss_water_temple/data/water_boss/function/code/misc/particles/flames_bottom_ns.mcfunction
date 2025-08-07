@@ -1,4 +1,4 @@
-## Show the flame particle effect that appears when the bottom platform is on fire | Repeat ##
+## Show the flame particle effects that appears when the bottom platform is on fire | Repeat ##
 
 #############
 # PARTICLES #

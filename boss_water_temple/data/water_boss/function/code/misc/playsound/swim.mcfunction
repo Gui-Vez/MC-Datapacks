@@ -1,7 +1,7 @@
-## Play the swim sound effect | Once ##
+## Play the swim SFX | Once ##
 
 #############
 # PLAYSOUND #
 #############
 
-playsound minecraft:entity.generic.swim player @a[distance=..50] ~ ~ ~ 0.4 0.65 0.1
+playsound minecraft:entity.generic.swim player @a[distance=..50] ~ ~ ~ 0.4 0.65 0.3

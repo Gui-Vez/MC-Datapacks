@@ -43,5 +43,4 @@ schedule function water_boss:code/scores/movement/swim/abs_value 1t
 
 schedule function water_boss:code/entities/kill/remove_projectiles 1t
 
-schedule function water_boss:code/entities/tags/untag_lit 1t
-schedule function water_boss:code/functions/layout/platforms/extinguish 1t
+schedule function water_boss:code/functions/layout/platforms/prepare_unlit 1t

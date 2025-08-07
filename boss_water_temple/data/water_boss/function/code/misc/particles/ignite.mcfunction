@@ -1,4 +1,4 @@
-## Show the particle effect that runs once the platform is ignited | Once ##
+## Show the particle effects that runs once the platform is ignited | Once ##
 
 #############
 # PARTICLES #
