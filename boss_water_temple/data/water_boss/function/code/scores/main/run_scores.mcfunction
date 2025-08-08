@@ -50,6 +50,9 @@ scoreboard objectives add WA_LastInitialized dummy "Water Boss Last Time Initial
 scoreboard objectives add WA_InWater dummy "Water Boss In Water Boolean"
 scoreboard objectives add WA_LastInWater dummy "Water Boss Last Time in Water"
 
+scoreboard objectives add WA_Ignited dummy "Water Boss Ignited Boolean"
+scoreboard objectives add WA_LastIgnited dummy "Water Boss Last Time Ignited"
+
 scoreboard objectives add WA_TurningSpeed dummy "Water Boss Turning Speed"
 scoreboard objectives add WA_EntityCount dummy "Water Boss Entity Count"
 

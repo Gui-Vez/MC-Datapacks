@@ -1,4 +1,4 @@
-## Play the phantom death sound effect | Once ##
+## Play the phantom death SFX | Once ##
 
 #############
 # PLAYSOUND #

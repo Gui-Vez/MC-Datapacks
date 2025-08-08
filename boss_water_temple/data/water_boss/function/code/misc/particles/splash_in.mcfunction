@@ -1,4 +1,4 @@
-## Show the splash in particle effect | Once ##
+## Show the splash in particle effects | Once ##
 
 #############
 # PARTICLES #

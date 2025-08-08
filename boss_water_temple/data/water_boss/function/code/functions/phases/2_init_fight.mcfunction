@@ -3,6 +3,7 @@
 # > Teleport markers inside arena
 # > Set winning boolean to false
 # > Randomize scores, offset and direction
+# > Manage platforms' configuration
 # > Show titles and boss bar
 # > Reset boss health
 
@@ -20,6 +21,8 @@ function water_boss:code/scores/count/win_boolean
 function water_boss:code/scores/movement/swim/randomize_offset
 function water_boss:code/scores/movement/swim/randomize_direction
 function water_boss:code/scores/movement/swim/turn_offset
+
+function water_boss:code/functions/layout/platforms/initialize
 
 function water_boss:code/misc/titles/show_start_titles
 function water_boss:code/misc/bossbar/reset_bossbar

@@ -1,4 +1,4 @@
-## Resets the phases, attacks and timers scores | Once ##
+## Resets the timers scores | Once ##
 
 ##########
 # SCORES #

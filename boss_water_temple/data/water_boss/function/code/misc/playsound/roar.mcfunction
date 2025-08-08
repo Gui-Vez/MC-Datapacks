@@ -1,4 +1,4 @@
-## Play the roar sound effect when the phantom targets a player | Once ##
+## Play the roar SFX when the phantom targets a player | Once ##
 
 #############
 # PLAYSOUND #

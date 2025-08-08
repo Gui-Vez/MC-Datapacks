@@ -8,6 +8,7 @@
 #############
 
 function water_boss:code/entities/teleport/move_by_commands
+function water_boss:code/scores/count/time_fire_fx
 
 schedule function water_boss:code/entities/effects/slow_boss 1t
 
@@ -15,6 +16,9 @@ schedule function water_boss:code/scores/count/delay_attacks 1t
 schedule function water_boss:code/entities/tags/mark_player 1t
 schedule function water_boss:code/scores/count/manage_attack_id 1t
 schedule function water_boss:code/scores/count/skip_attack 1t
+
+schedule function water_boss:code/entities/tags/tag_lit 1t
+schedule function water_boss:code/functions/attacks/ignite_a_platform 1t
 
 schedule function water_boss:code/functions/attacks/prepare_projectiles 1t
 schedule function water_boss:code/scores/count/increment_attacks 1t

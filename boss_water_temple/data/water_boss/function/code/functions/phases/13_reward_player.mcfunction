@@ -1,5 +1,6 @@
 ## Phase 13 | Once ##
 
+# > Show the victory particles
 # > Remove boss dependent tags
 # > Tag players as winners
 # > Grant advancement to players

@@ -4,6 +4,7 @@
 # FUNCTIONS #
 #############
 
+function water_boss:code/functions/layout/platforms/reinitialize
 function water_boss:code/functions/end/clear_functions
 function water_boss:code/scores/main/clear_scores
 function water_boss:code/entities/kill/unload_entities
