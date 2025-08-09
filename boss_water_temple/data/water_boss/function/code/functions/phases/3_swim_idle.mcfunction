@@ -27,6 +27,7 @@ function water_boss:code/scores/movement/swim/move_by_score
 function water_boss:code/scores/movement/swim/turn_pivots
 function water_boss:code/scores/movement/swim/bounce_offset
 
+function water_boss:code/functions/layout/platforms/prepare_unlit
 
 schedule function water_boss:code/scores/movement/swim/clamp_positions 1t
 
@@ -42,5 +43,3 @@ schedule function water_boss:code/entities/tags/toggle_translation 1t
 schedule function water_boss:code/scores/movement/swim/abs_value 1t
 
 schedule function water_boss:code/entities/kill/remove_projectiles 1t
-
-schedule function water_boss:code/functions/layout/platforms/prepare_unlit 1t

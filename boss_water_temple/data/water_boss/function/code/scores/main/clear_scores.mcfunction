@@ -42,14 +42,19 @@ scoreboard objectives remove WA_MaxZpos
 scoreboard objectives remove PhaseID
 scoreboard objectives remove WA_Health
 
-scoreboard objectives remove WA_InWater
-scoreboard objectives remove WA_LastInWater
-
-scoreboard objectives remove WA_Ignited
-scoreboard objectives remove WA_LastIgnited
-
 scoreboard objectives remove WA_Initialized
+scoreboard objectives remove WA_Bit
+scoreboard objectives remove WA_Roared
+scoreboard objectives remove WA_Angered
+scoreboard objectives remove WA_InWater
+scoreboard objectives remove WA_Ignited
+
 scoreboard objectives remove WA_LastInitialized
+scoreboard objectives remove WA_LastBit
+scoreboard objectives remove WA_LastRoared
+scoreboard objectives remove WA_LastAngered
+scoreboard objectives remove WA_LastInWater
+scoreboard objectives remove WA_LastIgnited
 
 scoreboard objectives remove WA_TurningSpeed
 scoreboard objectives remove WA_EntityCount
