@@ -1,15 +1,13 @@
 ## Phase 11 | Once ##
 
-# > Make the boss phantom invisible
-# > Make the boss phantom intangible
-
-# > Summon a fake phantom on origin
-# > Make the fake phantom invulnerable
+# > Extinguish the platforms
+# > Hide the bossbar
 
 #############
 # FUNCTIONS #
 #############
 
 function water_boss:code/functions/layout/platforms/prepare_unlit
+function water_boss:code/misc/bossbar/hide_bossbar
 
 scoreboard players set $PhaseID WA_VAR 12
