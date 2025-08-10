@@ -4,4 +4,4 @@
 # PLAYSOUND #
 #############
 
-playsound minecraft:block.lava.extinguish player @a[distance=..40] ~ ~ ~ 0.6 1 0.4
+playsound minecraft:block.lava.extinguish ambient @a[distance=..40] ~ ~ ~ 0.6 1 0.4

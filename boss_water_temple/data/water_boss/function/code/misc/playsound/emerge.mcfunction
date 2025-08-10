@@ -4,4 +4,4 @@
 # PLAYSOUND #
 #############
 
-playsound minecraft:entity.phantom.ambient player @a[distance=..50] ~ ~ ~ 1 0.75 1
+playsound minecraft:entity.phantom.ambient hostile @a[distance=..50] ~ ~ ~ 1 0.75 1

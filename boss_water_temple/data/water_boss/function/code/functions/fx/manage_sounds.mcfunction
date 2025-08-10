@@ -26,6 +26,15 @@ execute as @e[type=phantom, limit=1, tag=Water_Boss] at @s if entity @s[scores={
 # Swim
 execute if score $PhaseID WA_VAR matches 3 as @e[type=phantom, limit=1, tag=Water_Boss] at @s if score $SwimTimer WA_VAR matches 1 run function water_boss:code/misc/playsound/swim
 
+# Death
+execute if score $PhaseID WA_VAR matches 12 as @e[type=phantom, limit=1, tag=Water_Boss] at @s if score $DeathID WA_VAR matches 1 run function water_boss:code/misc/playsound/death
+
+# Explosion
+execute if score $PhaseID WA_VAR matches 12 as @e[type=phantom, limit=1, tag=Water_Boss] at @s if score $DeathID WA_VAR matches 3 run function water_boss:code/misc/playsound/explosion_small
+execute if score $PhaseID WA_VAR matches 12 as @e[type=phantom, limit=1, tag=Water_Boss] at @s if score $DeathID WA_VAR matches 5 run function water_boss:code/misc/playsound/explosion_small
+execute if score $PhaseID WA_VAR matches 12 as @e[type=phantom, limit=1, tag=Water_Boss] at @s if score $DeathID WA_VAR matches 7 run function water_boss:code/misc/playsound/explosion_small
+execute if score $PhaseID WA_VAR matches 12 as @e[type=phantom, limit=1, tag=Water_Boss] at @s if score $DeathID WA_VAR matches 9 run function water_boss:code/misc/playsound/explosion_big
+
 # Ignite / Extinguish
 execute if score $PhaseID WA_VAR matches 7 as @e[type=marker, tag=Water_Boss, tag=Platform, tag=WA_Lit] at @s if entity @s[scores={WA_LastIgnited=0, WA_Ignited=1}] run function water_boss:code/misc/playsound/ignite
 execute if score $PhaseID WA_VAR matches 8 as @e[type=marker, tag=Water_Boss, tag=Platform, tag=!WA_Lit] at @s if entity @s[scores={WA_LastIgnited=1, WA_Ignited=0}] run function water_boss:code/misc/playsound/extinguish
