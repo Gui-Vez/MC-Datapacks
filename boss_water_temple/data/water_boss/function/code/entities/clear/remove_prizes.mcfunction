@@ -5,3 +5,4 @@
 ###########
 
 clear @a heart_of_the_sea
+clear @a phantom_membrane

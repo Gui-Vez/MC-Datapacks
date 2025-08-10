@@ -45,12 +45,17 @@ scoreboard objectives add PhaseID dummy "Water Boss Phase ID"
 scoreboard objectives add WA_Health dummy "Water Boss Health Points"
 
 scoreboard objectives add WA_Initialized dummy "Water Boss Initialization Boolean"
-scoreboard objectives add WA_LastInitialized dummy "Water Boss Last Time Initialized"
-
+scoreboard objectives add WA_Bit dummy "Water Boss Bit Boolean"
+scoreboard objectives add WA_Roared dummy "Water Boss Roared Boolean"
+scoreboard objectives add WA_Angered dummy "Water Boss Angered Boolean"
 scoreboard objectives add WA_InWater dummy "Water Boss In Water Boolean"
-scoreboard objectives add WA_LastInWater dummy "Water Boss Last Time in Water"
-
 scoreboard objectives add WA_Ignited dummy "Water Boss Ignited Boolean"
+
+scoreboard objectives add WA_LastInitialized dummy "Water Boss Last Time Initialized"
+scoreboard objectives add WA_LastBit dummy "Water Boss Last Time Bit"
+scoreboard objectives add WA_LastRoared dummy "Water Boss Last Time Roared"
+scoreboard objectives add WA_LastAngered dummy "Water Boss Last Time Angered"
+scoreboard objectives add WA_LastInWater dummy "Water Boss Last Time in Water"
 scoreboard objectives add WA_LastIgnited dummy "Water Boss Last Time Ignited"
 
 scoreboard objectives add WA_TurningSpeed dummy "Water Boss Turning Speed"

@@ -4,4 +4,4 @@
 # PLAYSOUND #
 #############
 
-playsound minecraft:entity.phantom.bite player @a[distance=..50] ~ ~ ~ 1 0.85 0.5
+playsound minecraft:entity.phantom.bite hostile @a[distance=..25] ~ ~ ~ 0.75 0.85 0.2

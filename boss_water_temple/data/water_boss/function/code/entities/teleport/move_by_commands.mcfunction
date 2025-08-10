@@ -60,3 +60,11 @@ execute if score $PhaseID WA_VAR matches 8 as @e[type=phantom, limit=1, tag=Wate
 ## Phase 9)
 # TP phantom to the last waypoint, looking at the player
 execute if score $PhaseID WA_VAR matches 9 if score $WaypointID WA_VAR matches 4 as @e[type=phantom, limit=1, tag=Water_Boss] at @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss f100"] facing entity @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss f025"] eyes rotated 0 0 run tp @s ^ ^ ^
+
+## Phase 12)
+# Rotate the phantom on itself
+execute if score $PhaseID WA_VAR matches 12 if score $DeathID WA_VAR matches 0.. as @e[type=phantom, limit=1, tag=Water_Boss] at @s run tp @s ~ ~ ~ ~05 ~5
+execute if score $PhaseID WA_VAR matches 12 if score $DeathID WA_VAR matches 2.. as @e[type=phantom, limit=1, tag=Water_Boss] at @s run tp @s ~ ~ ~ ~05 ~5
+execute if score $PhaseID WA_VAR matches 12 if score $DeathID WA_VAR matches 4.. as @e[type=phantom, limit=1, tag=Water_Boss] at @s run tp @s ~ ~ ~ ~05 ~5
+execute if score $PhaseID WA_VAR matches 12 if score $DeathID WA_VAR matches 6.. as @e[type=phantom, limit=1, tag=Water_Boss] at @s run tp @s ~ ~ ~ ~05 ~5
+execute if score $PhaseID WA_VAR matches 12 if score $DeathID WA_VAR matches 8.. as @e[type=phantom, limit=1, tag=Water_Boss] at @s run tp @s ~ ~ ~ ~05 ~5

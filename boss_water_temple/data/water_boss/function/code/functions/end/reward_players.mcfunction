@@ -4,6 +4,6 @@
 # FUNCTIONS #
 #############
 
-execute as @e[type=minecraft:marker, limit=1, name="Water Boss Init", tag=Water_Boss] at @s positioned ~-25 ~-20 ~-25 as @a[gamemode=!spectator, gamemode=!creative, dx=50, dy=75, dz=50] run function water_boss:code/entities/tags/tag_winner
-execute as @e[type=minecraft:marker, limit=1, name="Water Boss Init", tag=Water_Boss] at @s positioned ~-25 ~-20 ~-25 as @a[gamemode=!spectator, gamemode=!creative, dx=50, dy=75, dz=50] run function water_boss:code/misc/advancements/grant_slayer_advancement
-execute as @e[type=minecraft:marker, limit=1, name="Water Boss Init", tag=Water_Boss] at @s positioned ~-25 ~-20 ~-25 as @a[gamemode=!spectator, gamemode=!creative, dx=50, dy=75, dz=50] at @s run function water_boss:code/misc/particles/victory
+execute as @a[gamemode=!spectator, gamemode=!creative, tag=!WA_Winner] at @s run function water_boss:code/misc/particles/victory
+execute as @a[gamemode=!spectator, gamemode=!creative, tag=!WA_Winner] run function water_boss:code/misc/advancements/grant_slayer_advancement
+execute as @a[gamemode=!spectator, gamemode=!creative, tag=!WA_Winner] run function water_boss:code/entities/tags/tag_winner

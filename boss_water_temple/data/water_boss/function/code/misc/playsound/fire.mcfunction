@@ -4,4 +4,4 @@
 # PLAYSOUND #
 #############
 
-playsound minecraft:block.fire.ambient player @a[distance=..20] ~ ~ ~ 0.6 1 0.4
+playsound minecraft:block.fire.ambient ambient @a[distance=..20] ~ ~ ~ 0.6 1 0.4
