@@ -25,6 +25,3 @@ summon marker ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["Water_Boss","
 summon marker ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["Water_Boss","Platform"],CustomName:"Water Boss Platform NW"}
 summon marker ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["Water_Boss","Platform"],CustomName:"Water Boss Platform SE"}
 summon marker ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["Water_Boss","Platform"],CustomName:"Water Boss Platform SW"}
-
-summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["Water_Boss","Transform"],CustomName:"Water Boss Origin"}
-summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["Water_Boss","Transform"],CustomName:"Water Boss Anchor"}

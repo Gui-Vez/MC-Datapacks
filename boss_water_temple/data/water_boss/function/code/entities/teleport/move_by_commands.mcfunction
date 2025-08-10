@@ -64,7 +64,7 @@ execute if score $PhaseID WA_VAR matches 9 if score $WaypointID WA_VAR matches 4
 ## Phase 12)
 # Rotate the phantom on itself
 execute if score $PhaseID WA_VAR matches 12 if score $DeathID WA_VAR matches 0.. as @e[type=phantom, limit=1, tag=Water_Boss] at @s run tp @s ~ ~ ~ ~05 ~5
-execute if score $PhaseID WA_VAR matches 12 if score $DeathID WA_VAR matches 2.. as @e[type=phantom, limit=1, tag=Water_Boss] at @s run tp @s ~ ~ ~ ~04 ~5
-execute if score $PhaseID WA_VAR matches 12 if score $DeathID WA_VAR matches 4.. as @e[type=phantom, limit=1, tag=Water_Boss] at @s run tp @s ~ ~ ~ ~03 ~5
-execute if score $PhaseID WA_VAR matches 12 if score $DeathID WA_VAR matches 6.. as @e[type=phantom, limit=1, tag=Water_Boss] at @s run tp @s ~ ~ ~ ~02 ~5
-execute if score $PhaseID WA_VAR matches 12 if score $DeathID WA_VAR matches 8.. as @e[type=phantom, limit=1, tag=Water_Boss] at @s run tp @s ~ ~ ~ ~01 ~5
+execute if score $PhaseID WA_VAR matches 12 if score $DeathID WA_VAR matches 2.. as @e[type=phantom, limit=1, tag=Water_Boss] at @s run tp @s ~ ~ ~ ~05 ~5
+execute if score $PhaseID WA_VAR matches 12 if score $DeathID WA_VAR matches 4.. as @e[type=phantom, limit=1, tag=Water_Boss] at @s run tp @s ~ ~ ~ ~05 ~5
+execute if score $PhaseID WA_VAR matches 12 if score $DeathID WA_VAR matches 6.. as @e[type=phantom, limit=1, tag=Water_Boss] at @s run tp @s ~ ~ ~ ~05 ~5
+execute if score $PhaseID WA_VAR matches 12 if score $DeathID WA_VAR matches 8.. as @e[type=phantom, limit=1, tag=Water_Boss] at @s run tp @s ~ ~ ~ ~05 ~5

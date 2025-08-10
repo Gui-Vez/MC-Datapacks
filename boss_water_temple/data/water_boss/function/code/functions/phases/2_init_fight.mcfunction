@@ -15,7 +15,6 @@ function water_boss:code/entities/teleport/teleport_in_bounds
 function water_boss:code/scores/main/run_scores
 
 function water_boss:code/storage/reset/reset_boss_health
-function water_boss:code/scores/count/set_alive
 function water_boss:code/scores/count/win_boolean
 
 function water_boss:code/scores/movement/swim/randomize_offset

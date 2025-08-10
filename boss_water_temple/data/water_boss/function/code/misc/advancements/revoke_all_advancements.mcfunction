@@ -4,4 +4,4 @@
 # ADVANCEMENTS #
 ################
 
-execute as @a run advancement revoke @s only water_boss:water_boss_slayer
+advancement revoke @a only water_boss:water_boss_slayer

@@ -33,3 +33,6 @@ execute if score $init delay_ticks matches 20.. run scoreboard players set $init
 
 # Incrementing the time passed as a delay to activate the script
 scoreboard players add $init delay_ticks 1
+
+# Run the functions after the fight has been won
+execute if score $load init_boolean matches 1 unless entity @e[type=marker, limit=1, tag=Water_Boss, name="Water Boss Init"] run function water_boss:code/functions/end/after_win_detect

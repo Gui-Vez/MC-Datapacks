@@ -24,7 +24,7 @@ execute if score $PhaseID WA_VAR matches 009 run function water_boss:code/functi
 execute if score $PhaseID WA_VAR matches 010 run function water_boss:code/functions/phases/10_reset_phases
 execute if score $PhaseID WA_VAR matches 011 run function water_boss:code/functions/phases/11_prepare_end
 execute if score $PhaseID WA_VAR matches 012 run function water_boss:code/functions/phases/12_animate_death
-execute if score $PhaseID WA_VAR matches 013 run function water_boss:code/functions/phases/13_reward_player
+execute if score $PhaseID WA_VAR matches 013 run function water_boss:code/functions/phases/13_reward_players
 execute if score $PhaseID WA_VAR matches 014 run function water_boss:code/functions/phases/14_end_fight
 
 # If in range #

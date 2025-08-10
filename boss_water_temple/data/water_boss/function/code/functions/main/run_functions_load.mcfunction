@@ -25,6 +25,9 @@ function water_boss:code/entities/teleport/teleport_out_of_bounds
 # Reset timers variables
 function water_boss:code/scores/count/reset_timers
 
+# Remove block that detects win condition
+function water_boss:code/blocks/setblock/remove_win_detection
+
 # Set the Phase ID of the Water Boss to 0
 scoreboard players set $PhaseID WA_VAR 0
 
