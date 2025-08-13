@@ -4,7 +4,7 @@
 # FILL #
 ########
 
-# (Change all 6 coordinates for each line to customize position of lit platforms)
+# Note: change all 6 coordinates for each line to customize position of lit platforms
 
 # Warped planks --> Magma blocks
 fill ~57 ~-20 ~-26 ~79 ~-17 ~-4 minecraft:magma_block replace minecraft:warped_planks

@@ -4,5 +4,5 @@
 # SETBLOCK #
 ############
 
-# (Change those coordinates)
+# Note: change those coordinates
 setblock 1 2 3 redstone_block

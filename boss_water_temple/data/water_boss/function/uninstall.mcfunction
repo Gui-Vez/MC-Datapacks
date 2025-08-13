@@ -1,18 +1,22 @@
 ###################################################################
 #                                                                 #
-#  This MC Datapack is used for the Water temple boss fight       #
-#  used in the Legend of Alex world.                              #
+#  This MC Datapack is used for a Water Temple Boss Fight.        #
 #                                                                 #
 # --------------------------------------------------------------- #
 #                        DATAPACK CREDITS                         #
 # --------------------------------------------------------------- #
 #                                                                 #
-#     Project owner:                                              #
-#       - Shells124                                               #
+#     Contributor :                                               #
+#     - HeyaItsSoup                                               #
 #                                                                 #
-#     Contributors:                                               #
-#       - HeyaItsSoup                                             #
-#       - Ariyusyli                                               #
+#     Check out my Youtube channel!                               #
+#     https://www.youtube.com/@HeyaItsSoup                        #
+#                                                                 #
+#     Explore my projects on GitHub!                              #
+#     https://github.com/Gui-Vez                                  #
+#                                                                 #
+#     Support me on Ko-Fi!                                        #
+#     https://ko-fi.com/heyaitssoup                               #
 #                                                                 #
 ###################################################################
 
@@ -26,8 +30,8 @@ function water_boss:code/functions/end/clear_fight
 function water_boss:code/functions/end/reset_rewards
 
 # Remove the init scoreboards
-scoreboard objectives remove init_boolean
-scoreboard objectives remove delay_ticks
+scoreboard objectives remove init_boolean_WA
+scoreboard objectives remove delay_ticks_WA
 
 # Remove the phase ID scoreboard
 scoreboard players reset $PhaseID WA_VAR
