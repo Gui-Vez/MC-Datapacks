@@ -13,8 +13,7 @@ function water_boss:code/entities/tags/remove_tags_all
 function water_boss:code/functions/end/reward_players
 function water_boss:code/blocks/setblock/add_win_detection
 
-# Note to Shells and Ari:
-# You can add a function that detects if the boss has permanantly been defeated by the player.
+# Note: You can add a function that detects if the boss has permanantly been defeated by the player.
 # It can be made by placing a block in a specific location in the map.
 # Doing so will grant the players their tags upon entering the area if they died or didn't obtain the prizes.
 

@@ -32,7 +32,7 @@ function water_boss:code/blocks/setblock/remove_win_detection
 scoreboard players set $PhaseID WA_VAR 0
 
 # Set the initialization boolean to 'true'
-scoreboard players set $load init_boolean 1
+scoreboard players set $load init_boolean_WA 1
 
 # Notify the player that the functions have been installed
 tellraw @a [{"text": "The Datapack has been initialized.", "color": "yellow"}]
